@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+/* RESETEO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.margen-inferior {
+    margin-bottom: 5rem !important;
+}
+
+.centrado {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* IMAGENES E ÍCONOS */
+
+.logo-header {
+    width: 115px;
+    height: 115px;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 100px;
+}
+
+.servicios article img {
+    width: 100px;
+}
+
+.reseñas img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.calificacion img {
+    width: 20px;
+}
+
+.icono {
+    width: 20px;
+}
+
+.icono-redes {
+    width: 30px;
+}
+
+.linea-divisora {
+    text-align: center;
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+}
+
+/* BOTONES */
+.btn {
+    background-color: #141827;
+    display: block;
+    width: 150px;
+    margin: 35px auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #ffffff !important;
+    text-transform: uppercase;
+}
+
+.btn-enviar {
+    background-color: #62455B !important;
+    color: #ffffff !important;
+
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #141827;
+    z-index: 2;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu-nav {
+    text-align: center;
+}
+
+.menu-nav .lista-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+.menu-nav .lista-nav li a {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+    background-color: #141827;
+    color: #ffffff;
+}
+
+#footer-contacto {
+    width: 80%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+
+.col-25 {
+    width: 25%;
+    padding: 1rem;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-contacto h4 {
+    margin-bottom: 1rem;
+}
+
+#footer-contacto img h4 {
+    text-align: start;
+}
+
+#footer-contacto article p {
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.derechos-autor {
+    border-top: 1px solid #ffffff;
+    text-align: center;
+}
+
+.derechos-autor p {
+    margin: 1rem 0;
+    font-size: .9rem;
+}
+
+/*********************** PÁGINAS (INDEX E INTERNAS) ********************/
+/* INDEX */
+.seccion {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+/* SECCIÓN NOSOTROS */
+#nosotros {
+    background-image: url('../assets/img/banner-nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: relative;
+}
+
+#nosotros h1 {
+    position: absolute;
+    background-color: #62455B;
+    color: #ffffff;
+    top: 30px;
+    width: 25%;
+    text-align: center;
+}
+
+.historia {
+    background-color: #0f10175c;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 150px;
+    left: 260px;
+    padding: 5rem;
+    color: #ffffff;
+    width: 60%;
+}
+
+/* SECCIÓN SERVICIOS */
+
+#servicios {
+    background-color: #C1D9D0;
+    padding: 2rem;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+    color: #141827;
+}
+
+#servicios article {
+    display: inline-block;
+    width: 25%;
+    margin: 2rem 1rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    color: #141827;
+}
+
+#servicios article img {
+    margin-bottom: 1rem;
+    width: 120px;
+}
+
+#servicios article h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* SECCIÓN RESEÑAS */
+#reseñas {
+    width: 100%;
+    text-align: center;
+}
+
+#reseñas h2 {
+    margin-bottom: 2rem;
+}
+
+#reseñas article {
+    width: 20%;
+    display: inline-block;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #736681;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    color: #ffffff;
+}
+
+.clientes {
+    margin: 1.5rem auto;
+}
+
+.clientes img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.valoracion {
+    margin-bottom: 1rem;
+}
+.valoracion img {
+        width: 30px;
+}
+
+/*************************************************/
+/* PÁGINA - MENÚ MUNDIAL*/
+
+#texto-banner article {
+    display: inline-block;
+}
+
+.bg-menu {
+    background-image: url('../assets/img/banner-menu.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.titulo {
+    margin: 2rem 0;
+}
+
+.info-menu {
+    width: 50%;
+}
+
+.menu-paises div {
+    display: inline-block;
+    margin: .4rem;
+    padding: 1rem;
+    background-color: #62455B;
+    border-radius: 10px;
+}
+
+.menu-paises div a{
+    color: #ffffff;
+}
+
+/**************************************************/
+/* PÁGINA - SERVICIOS */
+#banner-servicios {
+    background-image: url('../assets/img/servicios.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+#seccion-servicios section {
+    text-align: center;
+}
+
+.info-servicios {
+    background-color: #736681;
+    width: 50%;
+    height: 30vh;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.servicios h4 {
+    text-align: center;
+}
+
+.servicios img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.menu-paises {
+    margin: 0 !important;
+}
+
+.platos {
+    width: 100%;
+    padding: 8rem 2rem;
+    margin: 0 !important;
+    background-color: rgb(115 102 129 / 45%);
+    box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 10%);
+    position: relative;
+}
+
+.platos div {
+    width: 30%;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.bandera {
+    width: 120px;
+    display: inline-block;
+    position: absolute;
+    left: 120px;
+    z-index: 1;
+}
+
+/**************************************************/
+/* PÁGINA - EVENTOS */
+.eventos {
+    background-color: #736681cf;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.eventos h1 {
+    text-align: center;
+}
+
+.evento-info {
+    width: 50%;
+}
+
+.evento-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.evento-carrusel {
+    width: 30%;
+    text-align: center;
+}
+
+.evento-carrusel .cuadrado {
+    width: 120px;
+}
+
+/*************************************************/
+/* PÁGINA - CONTACTO */
+
+#seccion-contacto {
+    background-image: url('../assets/img/bg-contacto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.seccion #titulo-contacto {
+    padding: 3rem 0;
+}
+
+.seccion article {
+    display: inline-block;
+}
+
+#formulario {
+    background-color: #736681b5;
+    backdrop-filter: blur(3px);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 50%;
+}
+
+#formulario form input, textarea {
+    display: block;
+    margin: 0.9rem 0px 0.8rem;
+    width: 300px;
+    padding: 7px;
+    border-radius: 2px;
+    border: none;
+}
+
+#mapa {
+    padding: 0 2rem;
+    width: 50%;
+}
