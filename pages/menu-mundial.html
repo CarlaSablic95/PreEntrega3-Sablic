@@ -1,146 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <title>Restó del mundo | Menú mundial</title>
 </head>
+
 <body>
     <!-- ENCABEZADO / MENÚ DE NAVEGACIÓN -->
     <header>
-        <nav class="menu-nav">
-            <ul class="lista-nav">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../index.html#nosotros">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/menu-mundial.html">Menú mundial</a>
-                </li>
-                <li>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <div class="d-block d-lg-none">
                     <a href="../index.html">
-                        <img src="../assets/img/logo.png" alt="logo" class="logo-header">
+                        <img src="../assets/img/logo.png" alt="Logo Restó"
+                            class="d-inline-block align-text-top logo-header" />
                     </a>
-                </li>
-                <li>
-                    <a href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="../pages/eventos.html">Eventos</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white active" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="../index.html#nosotros">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="../pages/menu-mundial.html">Menú
+                                mundial</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-lg-block">
+                        <a href="../index.html">
+                            <img src="../assets/img/logo.png" alt="Logo Restó"
+                                class="d-inline-block align-text-top logo-header" />
+                        </a>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" aria-current="page"
+                                href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" aria-current="page"
+                                href="../pages/eventos.html">Eventos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" aria-current="page"
+                                href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-<!-- MAIN -->
+    <!-- MAIN -->
     <main>
         <section id="texto-banner" class="bg-menu"></section>
         <div class="titulo">
             <h1>Conocé nuestro menú mundial</h1>
         </div>
-        
+
         <!-- MENÚ MUNDIAL -->
-        <section id="menu-mundial" class="seccion">
-            <article class="menu-paises">
-                <div>
-                    <a href="#alemania">Lunes - Alemania</a>
-                </div>
-                <div>
-                    <a href="#francia">Martes - Francia</a>
-                </div>
-                <div>
-                    <a href="#japon">Miércoles - Japón</a>
-                </div>
-                <div>
-                    <a href="#mexico">Jueves - México</a>
-                </div>
-                <div>
-                    <a href="#argentina">Viernes - Argentina</a>
-                </div>
-                <div>
-                    <a href="#espania">Sábado - España</a>
-                </div>
-                <div>
-                    <a href="#italia">Domingo - Italia</a>
-                </div>
-            </article>
-    </section>
+        <section id="menu-mundial" class="container seccion">
+            <ul class="nav nav-pills mb-3 justify-content-evenly" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#alemania"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Lunes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#francia"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Martes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#japon"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Miércoles</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#mexico"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Jueves</button>
+                </li>
 
-            <!-- ENTRADA / PLATO PRINCIPAL / POSTRE -->
-        <section class="seccion">
-            <div class="alemania">
-                <img src="../assets/img/alemania1.png" alt="" class="bandera">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#argentina"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Viernes</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#espania"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Sábado</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#italia"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Domingo</button>
+                </li>
+            </ul>
+
+            <!-- CONTENEDORES MENÚ -->
+            <div class="tab-content container" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="alemania" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <!-- ALEMANIA -->
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">Alemania</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/alemania.png" alt="bandera de Alemania">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- FRANCIA -->
+                <div class="tab-pane fade" id="francia" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">Francia</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/francia.jpg" alt="bandera de Francia">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- JAPÓN -->
+                <div class="tab-pane fade" id="japon" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">Japón</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/japon.jpg" alt="bandera de Japón">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- MÉXICO -->
+                <div class="tab-pane fade" id="mexico" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">México</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/mexico.png" alt="bandera de México">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- ARGENTINA -->
+                <div class="tab-pane fade" id="argentina" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">Argentina</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/argentina.jpg" alt="bandera de Argentina">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- ESPAÑA -->
+                <div class="tab-pane fade" id="espania" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">España</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/españa.jpg" alt="bandera de España">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- ITALIA -->
+                <div class="tab-pane fade" id="italia" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="container position-relative platos px-5 py-4">
+                        <h2 class="text-center mb-5">Italia</h2>
+                        <div class="bandera position-absolute">
+                            <img src="../assets/img/italia.jpg" alt="bandera de Italia">
+                        </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <h3>Entrada</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Plato principal</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <h3>Postre</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
-            <!-- ALEMANIA -->
-            <article class="platos" id="alemania">
-                <div>
-                    <h3>Entrada</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo distinctio, quis vel cumque non quae dignissimos adipisci debitis modi quisquam et tenetur tempore corporis labore facere perferendis explicabo minus accusamus?</p>  
-                </div>
-                
-                <div>
-                    <h3>Plato principal</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
-                </div>
 
-                <div>
-                    <h3>Postre</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, distinctio adipisci in quaerat ullam similique quae, modi aspernatur repudiandae architecto cupiditate asperiores assumenda? Doloremque, voluptas error? Commodi totam itaque sed?</p>
-                </div>
-            </article>
         </section>
+
+        <!-- ENTRADA / PLATO PRINCIPAL / POSTRE -->
+
     </main>
 
-<!-- FOOTER -->
-<footer>
-    <!-- SECCIÓN CONTACTO / HORARIO /COPYRIGHT -->
-    <section id="footer-contacto">
-        <article>
-            <img src="../assets/img/logo.png" alt="logo" class="logo-footer">
-            <p>© 2022 | Todos los derechos reservados</p>
-        </article>
-        
-        <article>
-            <h4>Horarios:</h4>
-            <p>Lunes a Viernes de 20 a 23hs</p>
-            <p>Sábado y Domingos de 19 a 00hs</p>
-        </article>
+    <!-- FOOTER -->
+    <footer>
+        <!-- SECCIÓN CONTACTO / HORARIO /COPYRIGHT -->
+        <section id="footer-contacto" class="container py-5 text-white">
+            <div class="row justify-content-center align-items-top flex-wrap text-center text-lg-start">
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="../assets/img/logo.png" alt="logo" class="logo-footer" />
+                    <p>© 2022 | Todos los derechos reservados</p>
+                </div>
 
-        <article>
-            <h4>Contactanos:</h4>
-            <p>
-                <img src="../assets/img/ubicacion.png" alt="ubicación" class="icono"> Av. Pellegrini 1578
-            </p>
-            <p>
-                <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono"> +54 9 34124-8576
-            </p>
-            <p>
-                <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono"> 4393108
-            </p>
-        </article>
+                <div class="col-12 col-md-3 mb-4">
+                    <h4>Horarios:</h4>
+                    <p>Lunes a Viernes de 20 a 23hs</p>
+                    <p>Sábado y Domingos de 19 a 00hs</p>
+                </div>
 
-        <article>
-            <h4>Seguinos:</h4>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../assets/img/icono-ig.svg" alt="ícono de instagram" class="icono-redes">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../assets/img/icono-fb.svg" alt="ícono de facebook" class="icono-redes">
-            </a>
-        </article>
+                <div class="col-12 col-md-3 mb-4">
+                    <h4>Contactanos:</h4>
+                    <p>
+                        <img src="../assets/img/ubicacion.png" alt="ubicación" class="icono" />
+                        Av. Pellegrini 1578
+                    </p>
+                    <p>
+                        <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono" />
+                        +54 9 34124-8576
+                    </p>
+                    <p>
+                        <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono" />
+                        4393108
+                    </p>
+                </div>
 
-        <div class="derechos-autor">
-            <p>Restó del mundo | Diseño y desarrollo por Carla Sablic</p>
-        </div>
-    </section>
-</footer>
+                <div class="col-12 col-md-3 mb-4">
+                    <h4>Seguinos:</h4>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/img/icono-ig.svg" alt="ícono de instagram" class="icono-redes" />
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../assets/img/icono-fb.svg" alt="ícono de facebook" class="icono-redes" />
+                    </a>
+                </div>
+
+                <div class="derechos-autor">
+                    <p>Restó del mundo | Diseño y desarrollo por Carla Sablic</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
