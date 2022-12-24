@@ -3,7 +3,6 @@
 /* ESTILOS BOOTSTRAP */
 .bg-dark {
     background-color: #141827 !important;
-    height: 16vh;
 }
 
 a:active, a:hover {
@@ -459,22 +458,32 @@ footer {
 
 /*************************************************/
 /* PÁGINA - CONTACTO */
-
 #seccion-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    column-gap: 2px;
+}
+
+#header-contacto {
+    grid-area: header;
+}
+
+#main-contacto {
+    grid-area: main;
     background-image: url('../assets/img/bg-contacto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "mapa mapa"
-    "formulario formulario";
-    column-gap: 2px;
 }
 
+#footer {
+    grid-area: footer;
+}
 
 .seccion #titulo-contacto {
     padding: 3rem 0;
@@ -483,6 +492,7 @@ footer {
 #mapa {
     padding: 0 2rem;
     grid-area: mapa;
+    width: 50vw;
 }
 
 iframe {
@@ -514,14 +524,7 @@ iframe {
     }
 
     /* INTERNA CONTACTO */
-    #seccion-contacto {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "mapa"
-        "formulario";
-        column-gap: 2px;
-    }
+ 
 
     #formulario {
         width: 50%;
