@@ -262,7 +262,6 @@ footer {
 }
 
 .owl-carousel .item .card{
-    display: inline-block;
     margin: 2rem;
     padding: 2rem;
     background-color: #736681;
