@@ -77,9 +77,6 @@ a:active {
     text-decoration: underline;
 }
 
-.margen-inferior {
-    margin-bottom: 5rem !important;
-}
 
 .centrado {
     position: absolute;
@@ -363,6 +360,28 @@ footer {
 
 /**************************************************/
 /* PÁGINA - EVENTOS */
+#seccion-aniversarios, #seccion-graduaciones, #seccion-cumpleanios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: repeat(3, 1fr);
+    grid-template-areas: 
+    aniversarios aniversarios
+    graduaciones graduaciones
+    cumpleanios cumpleanios;
+}
+
+#seccion-aniversarios {
+    grid-area: aniversarios;
+}
+
+#seccion-graduaciones {
+    grid-area: graduaciones;
+}
+
+#seccion-cumpleanios {
+    grid-area: cumpleanios;
+}
+
 .eventos {
     background-color: #736681cf;
     padding: 1rem;
@@ -400,15 +419,27 @@ footer {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "mapa mapa"
+    "formulario formulario";
+    column-gap: 2px;
 }
+
 
 .seccion #titulo-contacto {
     padding: 3rem 0;
 }
 
-.seccion article {
-    display: inline-block;
+#mapa {
+    padding: 0 2rem;
+    grid-area: mapa;
+}
+
+iframe {
+    width: 100%;
 }
 
 #formulario {
@@ -416,37 +447,45 @@ footer {
     backdrop-filter: blur(3px);
     padding: 2rem;
     border-radius: 2rem;
-}
-
-#formulario form input, textarea {
-    display: block;
-    margin: 0.9rem 0px 0.8rem;
-    width: 300px;
-    padding: 7px;
-    border-radius: 2px;
-    border: none;
-}
-
-#mapa {
-    padding: 0 2rem;
+    width: 40vw;
 }
 
 
 /********************** MEDIA QUERIES   *******************************/
 
 @media (max-width: 768px) {
-
+    /* INICIO */
     .historia {
         padding: 3rem;
+    }
+
+    /* INTERNA CONTACTO */
+    #seccion-contacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "mapa"
+        "formulario";
+        column-gap: 2px;
+    }
+
+    #formulario {
+        width: 50%;
     }
 }
 
 @media (max-width: 576px) {
+    /* INICIO */
     .contenedor-titulo {
         width: 60vw;
     }
-
+    
     .historia {
         padding: 2rem;
+    }
+
+    /* INTERNA CONTACTO */
+    #formulario {
+        width: 50%;
     }
 }
