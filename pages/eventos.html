@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>Restó del mundo | Eventos</title>
 </head>
-<body>
+<body id="layout-grid">
     <!-- ENCABEZADO / MENÚ DE NAVEGACIÓN -->
-    <header>
+    <header id="header-eventos">
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <div class="d-block d-lg-none">
@@ -72,32 +72,32 @@
     </header>
 
     <!-- MAIN -->
-    <main>
-        <section>
+    <main id="main-eventos">
+        <section id="banner-video">
             <video src="../assets/videos/eventos.mp4" loop autoplay></video>
         </section>
 
         <!-- LÍNEA DIVISORA -->
-        <div class="linea-divisora">
+        <div class="linea-divisora" id="divisor">
             <img src="../assets/img/linea-divisoria.png" alt="">
         </div>
 
-        <section>
+        <!-- <section>
             <h1>Eventos</h1>
-        </section>
+        </section> -->
 
         <!-- SECCIÓN EVENTOS -->
-        <section id="seccion-aniversarios" class="seccion my-5">
+        <section id="seccion-aniversarios" class="container seccion my-5">
             <!-- ANIVERSARIOS -->
-            <article class="evento-info eventos">
+            <div class="evento-info eventos" id="info-aniversario">
                 <div>
                     <h4>Aniversarios</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident voluptas suscipit dolorem aspernatur et, facere, assumenda saepe tenetur voluptatum, quia recusandae enim a numquam aut totam ducimus. Cumque, vero.</p>
                 </div>
-            </article>
+            </div>
 
             <!-- CARRUSEL -->
-            <article class="evento-carrusel">
+            <div class="evento-carrusel" id="carrusel-aniversario">
                 <div class="container">
                     <div class="owl-carousel owl-theme"">
                         <div class=" item">
@@ -141,13 +141,13 @@
                         </div>
                 </div>
                 </div>
-            </article>
+            </div>
         </section>    
 
         <!-- GRADUACIONES -->
-        <section id="seccion-graduaciones" class="seccion my-5">
+        <section id="seccion-graduaciones" class="container seccion my-5">
             <!-- CARRUSEL -->
-            <article class="evento-carrusel">
+            <div class="evento-carrusel">
                 <div class="container">
                     <div class="owl-carousel owl-theme"">
                         <div class=" item">
@@ -191,18 +191,18 @@
                         </div>
                 </div>
                 </div>
-            </article>
+            </div>
 
-            <article class="evento-info eventos">
+            <div class="evento-info eventos">
                 <div>
                     <h4>Graduaciones</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident voluptas suscipit dolorem aspernatur et, facere, assumenda saepe tenetur voluptatum, quia recusandae enim a numquam aut totam ducimus. Cumque, vero.</p>
                 </div>
-            </article>
+            </div>
         </section>
 
     <!-- CUMPLEAÑOS -->
-    <section id="seccion-cumpleanios" class="seccion my-5">
+    <section id="seccion-cumpleanios" class="container seccion my-5">
         <article class="evento-info eventos">
             <div>
                 <h4>Cumpleaños</h4>
@@ -260,7 +260,7 @@
 </main>
 
 <!-- FOOTER -->
-<footer>
+<footer id="footer-eventos">
     <!-- SECCIÓN CONTACTO / HORARIO /COPYRIGHT -->
     <section id="footer-contacto" class="container py-5 text-white">
         <div class="row justify-content-center align-items-top flex-wrap text-center text-lg-start">
@@ -327,17 +327,6 @@
                     margin: 15,
                     autoplay: true,
                     autoplayTimeout:4000,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 1
-                        },
-                        1000: {
-                            items: 1
-                        }
-                    }
                 })
             })
         </script>
