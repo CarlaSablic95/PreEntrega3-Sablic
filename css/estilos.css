@@ -494,6 +494,22 @@ footer {
     grid-area: divisor;
 }
 
+.owl-carousel .item .eventos-cards {
+    margin: 0rem;
+    padding: 0rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #ffffff;
+}
+
+.evento-graduacion img {
+    transform: rotate(-7deg);
+}
+
+.contenedor-eventos > img {
+    transform: rotate(7deg);
+}
+
 /* ANIVERSARIO: INFO - CARRUSEL */
 
 #seccion-aniversarios {
@@ -523,9 +539,9 @@ footer {
 
 .eventos {
     background-color: #736681cf;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
-    width: 50vw;
+    width: 30vw;
     height: 30vh;
 }
 
