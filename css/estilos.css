@@ -1,12 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
+/* ESTILOS GENERALES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 /* ESTILOS BOOTSTRAP */
 .bg-dark {
     background-color: #141827 !important;
 }
 
+.navbar-toggler-icon {
+    background-image:url("../assets/img/icono-menu.png") !important;
+}
+
+a.nav-link {
+    letter-spacing: 1px;
+}
+
 a:active, a:hover {
     text-decoration: none !important;
+}
+
+a.nav-link:hover {
+    font-weight: 900;
 }
 
 #pills-tab li button {
@@ -49,11 +71,6 @@ a:active, a:hover {
     border-radius: 8px;
     border: 3px solid #ffffff;
 
-}
-
-html {
-    scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif !important;
 }
 
 h1 {
@@ -145,13 +162,20 @@ video {
 .btn-enviar {
     background-color: #62455B !important;
     color: #ffffff !important;
-
+    background: linear-gradient(-68deg,#52394d, #b9a4d098);
 }
+
+#btn-info:hover {
+    background: #736681 !important;
+    cursor: pointer;
+    transition: all 0.5s 0s linear;
+}
+
 
 
 /* HEADER */
 header {
-    width: 100%;
+    /* height: 12vh; */
     position: sticky;
     top: 0;
     z-index: 2;
@@ -219,6 +243,61 @@ footer {
 }
 
 /* SECCIÓN SERVICIOS */
+#seccion-servicios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 2fr 0.2fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+#header-servicios {
+    grid-area: header;
+}
+
+#main-servicios {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 0.1fr repeat(3, 0.5fr);
+    grid-template-areas:
+    "banner banner"
+    "linea linea"
+    "takeaway takeaway"
+    "delivery delivery"
+    "reservas reservas"
+    ;
+}
+
+#linea-divisoria {
+    grid-area: linea;
+    flex-wrap: wrap;
+}
+
+#take-away {
+    grid-area: takeaway;
+    flex-wrap: wrap;
+}
+
+#delivery {
+    grid-area: delivery;
+    flex-wrap: wrap;
+}
+
+#reservas {
+    grid-area: reservas;
+}
+
+#banner-servicios {
+    grid-area: banner;
+}
+
+#footer-servicios {
+    grid-area: footer;
+}
 
 #servicios {
     background-color: #C1D9D0;
@@ -335,10 +414,15 @@ footer {
 
 .info-servicios {
     background-color: #736681;
-    width: 50%;
+    width: 30vw;
     height: 30vh;
     border-radius: 1rem;
     padding: 2rem;
+    transition: transform .5s;
+}
+
+.info-servicios:hover {
+    transform: scale(1.1);
 }
 
 .servicios h4 {
@@ -346,8 +430,7 @@ footer {
 }
 
 .servicios img {
-    border-radius: 50%;
-    width: 120px;
+    width: 70px;
 }
 
 .menu-paises {
@@ -359,14 +442,18 @@ footer {
     box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 10%);
 }
 
+/* TRANSFORMACIONES */
+
+.info-servicios:hover {
+    
+}
 /**************************************************/
 /* PÁGINA - EVENTOS */
 #layout-grid {
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr 2fr 0.5fr;
+    grid-template-rows: 0.1fr 2fr 0.2fr;
     grid-template-areas:
         "header header"
         "main main"
@@ -420,6 +507,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* CUMPLEAÑOS: INFO - CARRUSEL */
@@ -428,6 +516,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .eventos {
@@ -461,7 +550,7 @@ footer {
 #seccion-contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.2fr 2fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.5fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -529,6 +618,7 @@ iframe {
     #formulario {
         width: 50%;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -545,4 +635,11 @@ iframe {
     #formulario {
         width: 50%;
     }
+
+    /* PÁGINA EVENTOS */
+    #seccion-aniversarios {
+        flex-wrap: wrap;
+    }
+
+
 }
