@@ -16,14 +16,15 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-image:url("../assets/img/icono-menu.png") !important;
+    background-image: url("../assets/img/icono-menu.png") !important;
 }
 
 a.nav-link {
     letter-spacing: 1px;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
     text-decoration: none !important;
 }
 
@@ -53,7 +54,8 @@ a.nav-link:hover {
     border-radius: 0;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #62455B;
     width: 30px;
     height: 4px;
@@ -162,7 +164,7 @@ video {
 .btn-enviar {
     background-color: #62455B !important;
     color: #ffffff !important;
-    background: linear-gradient(-68deg,#52394d, #b9a4d098);
+    background: linear-gradient(-68deg, #52394d, #b9a4d098);
 }
 
 #btn-info:hover {
@@ -264,11 +266,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.1fr 0.1fr repeat(3, 0.5fr);
     grid-template-areas:
-    "banner banner"
-    "linea linea"
-    "takeaway takeaway"
-    "delivery delivery"
-    "reservas reservas"
+        "banner banner"
+        "linea linea"
+        "takeaway takeaway"
+        "delivery delivery"
+        "reservas reservas"
     ;
 }
 
@@ -338,7 +340,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-.owl-carousel .item .card{
+.owl-carousel .item .card {
     margin: 2rem;
     padding: 2rem;
     background-color: #736681;
@@ -359,6 +361,7 @@ footer {
 .valoracion {
     margin-bottom: 1rem;
 }
+
 .valoracion img {
     width: 30px !important;
 }
@@ -385,7 +388,7 @@ footer {
     width: 50%;
 }
 
-.menu-paises div a{
+.menu-paises div a {
     color: #ffffff;
 }
 
@@ -444,9 +447,8 @@ footer {
 
 /* TRANSFORMACIONES */
 
-.info-servicios:hover {
-    
-}
+.info-servicios:hover {}
+
 /**************************************************/
 /* PÁGINA - EVENTOS */
 #layout-grid {
@@ -470,11 +472,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 0.2fr repeat(3, 0.2fr);
     grid-template-areas:
-    "video video"
-    "divisor divisor"
-    "aniversario aniversario"
-    "graduaciones graduaciones"
-    "cumpleanios cumpleanios"
+        "video video"
+        "divisor divisor"
+        "aniversario aniversario"
+        "graduaciones graduaciones"
+        "cumpleanios cumpleanios"
     ;
     column-gap: 10px;
     row-gap: 10px;
@@ -551,10 +553,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.1fr 1fr 0.5fr;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
     column-gap: 2px;
 }
 
@@ -607,13 +609,14 @@ iframe {
 }
 
 @media (max-width: 768px) {
+
     /* INICIO */
     .historia {
         padding: 3rem;
     }
 
     /* INTERNA CONTACTO */
- 
+
 
     #formulario {
         width: 50%;
@@ -622,11 +625,12 @@ iframe {
 }
 
 @media (max-width: 576px) {
+
     /* INICIO */
     .contenedor-titulo {
         width: 60vw;
     }
-    
+
     .historia {
         padding: 2rem;
     }
