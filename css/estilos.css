@@ -268,10 +268,11 @@ footer {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.1fr 0.1fr repeat(3, 0.5fr);
+    grid-template-rows: 0.1fr 0.1fr 0.1fr repeat(3, 0.5fr);
     grid-template-areas:
         "banner banner"
         "linea linea"
+        "titulo-servicios titulo-servicios"
         "takeaway takeaway"
         "delivery delivery"
         "reservas reservas";
@@ -279,6 +280,11 @@ footer {
 
 #linea-divisoria {
     grid-area: linea;
+    flex-wrap: wrap;
+}
+
+#titulo-servicios {
+    grid-area: takeaway;
     flex-wrap: wrap;
 }
 
