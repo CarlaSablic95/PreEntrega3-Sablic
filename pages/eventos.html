@@ -76,17 +76,19 @@
     <!-- MAIN -->
     <main id="main-eventos">
         <section id="banner-video">
-            <video src="../assets/videos/eventos.mp4" loop autoplay></video>
+            <div class="video position-relative">
+                <video src="../assets/videos/eventos.mp4" autoplay loop ></video>
+
+                <div class="titulo-banner text-white text-uppercase position-absolute d-flex justify-content-center align-items-center">
+                    <h1 class="letter-spacing-3"><span class="fst-italic fw-bold">Eventos</span></h1>
+                </div>
+            </div>
         </section>
 
         <!-- LÍNEA DIVISORA -->
         <div class="linea-divisora" id="divisor">
             <img src="../assets/img/linea-divisoria.png" alt="linea divisora" class="img-fluid">
         </div>
-
-        <!-- <section>
-            <h1>Eventos</h1>
-        </section> -->
 
         <!-- SECCIÓN EVENTOS -->
         <section id="seccion-aniversarios" class="container seccion my-5">
@@ -197,7 +199,7 @@
             </div>
             </div>
 
-            <div class="evento-info eventos text-white">
+            <div class="evento-info eventos text-white text-center text-lg-end">
                 <div>
                     <h4>Graduaciones</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident voluptas suscipit dolorem

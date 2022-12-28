@@ -28,8 +28,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                <div class="collapse navbar-collapse justify-content-evenly py-3 py-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center mx-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
                             <a class="nav-link text-uppercase text-white active" aria-current="page"
                                 href="../index.html">Inicio</a>
@@ -73,7 +73,12 @@
 
     <!-- MAIN -->
     <main id="main-servicios">
-        <section id="banner-servicios"></section>
+        <section id="banner-servicios" class="position-relative">
+            <div class="bg-banner-menu"></div>
+            <div class="titulo-banner text-white text-uppercase position-absolute d-flex justify-content-center align-items-center">
+                <h1 class="letter-spacing-3"><span class="fst-italic fw-bold">Servicios</span></h1>
+            </div>
+        </section>
 
         <div class="linea-divisora" id="linea-divisoria">
             <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">

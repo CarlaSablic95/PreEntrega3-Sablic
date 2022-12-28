@@ -10,6 +10,10 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+.letter-spacing-3 {
+    letter-spacing: 3px;
+}
+
 /* ESTILOS BOOTSTRAP */
 .bg-dark {
     background-color: #141827 !important;
@@ -76,7 +80,7 @@ a.nav-link:hover {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -164,7 +168,7 @@ video {
 .btn-enviar {
     background-color: #62455B !important;
     color: #ffffff !important;
-    background: linear-gradient(-68deg, #52394d, #b9a4d098);
+    background: linear-gradient(-68deg, #564152d6, #b9a4d0c7);
 }
 
 #btn-info:hover {
@@ -177,7 +181,6 @@ video {
 
 /* HEADER */
 header {
-    /* height: 12vh; */
     position: sticky;
     top: 0;
     z-index: 2;
@@ -247,9 +250,10 @@ footer {
 /* SECCIÓN SERVICIOS */
 #seccion-servicios {
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.1fr 2fr 0.2fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
         "header header"
         "main main"
@@ -270,8 +274,7 @@ footer {
         "linea linea"
         "takeaway takeaway"
         "delivery delivery"
-        "reservas reservas"
-    ;
+        "reservas reservas";
 }
 
 #linea-divisoria {
@@ -369,23 +372,25 @@ footer {
 /*************************************************/
 /* PÁGINA - MENÚ MUNDIAL*/
 
-#texto-banner article {
-    display: inline-block;
-}
-
-.bg-menu {
+#banner-menu > .bg-menu {
     background-image: url('../assets/img/banner-menu.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: calc(100vh - 70px);
 }
 
-.titulo {
-    margin: 2rem 0;
+.titulo-banner {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.info-menu {
-    width: 50%;
+#menu-mundial {
+    margin: 2rem auto 5rem;
 }
 
 .menu-paises div a {
@@ -403,11 +408,11 @@ footer {
 
 /**************************************************/
 /* PÁGINA - SERVICIOS */
-#banner-servicios {
+#banner-servicios > .bg-banner-menu {
     background-image: url('../assets/img/servicios.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center center;
     height: 100vh;
 }
 
@@ -449,9 +454,10 @@ footer {
 /* PÁGINA - EVENTOS */
 #layout-grid {
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.1fr 2fr 0.2fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
         "header header"
         "main main"
@@ -472,10 +478,13 @@ footer {
         "divisor divisor"
         "aniversario aniversario"
         "graduaciones graduaciones"
-        "cumpleanios cumpleanios"
-    ;
+        "cumpleanios cumpleanios";
     column-gap: 10px;
     row-gap: 10px;
+}
+
+.video video {
+    object-fit: cover;
 }
 
 #footer-eventos {
@@ -562,9 +571,11 @@ footer {
 /*************************************************/
 /* PÁGINA - CONTACTO */
 #seccion-contacto {
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "header header"
         "main main"
@@ -578,10 +589,11 @@ footer {
 
 #main-contacto {
     grid-area: main;
-    background-image: url('../assets/img/bg-contacto.jpg');
+    background-image: url('../assets/img/bg-contacto.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 #footer {
@@ -595,7 +607,7 @@ footer {
 #mapa {
     padding: 0 2rem;
     grid-area: mapa;
-    width: 50vw;
+    width: 35vw;
 }
 
 iframe {
@@ -604,12 +616,11 @@ iframe {
 
 #formulario {
     background-color: #736681b5;
-    backdrop-filter: blur(3px);
-    padding: 2rem;
-    border-radius: 2rem;
-    width: 40vw;
+    backdrop-filter: blur(4px);
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    width: 25vw;
 }
-
 
 /********************** MEDIA QUERIES   *******************************/
 
@@ -617,6 +628,14 @@ iframe {
     .logo-header {
         width: 100px;
         height: 100px;
+    }
+
+    .navbar-collapse.show {
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 }
 
@@ -628,10 +647,12 @@ iframe {
     }
 
     /* INTERNA CONTACTO */
+    #mapa {
+        padding: 0;
+    }
 
-
-    #formulario {
-        width: 50%;
+    #mapa, #formulario {
+        width: 80vw;
     }
 
 }
@@ -639,17 +660,9 @@ iframe {
 @media (max-width: 576px) {
 
     /* INICIO */
-    .contenedor-titulo {
-        width: 60vw;
-    }
 
     .historia {
         padding: 2rem;
-    }
-
-    /* INTERNA CONTACTO */
-    #formulario {
-        width: 50%;
     }
 
     /* PÁGINA EVENTOS */

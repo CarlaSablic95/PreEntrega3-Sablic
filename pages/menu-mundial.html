@@ -73,14 +73,23 @@
 
     <!-- MAIN -->
     <main id="section-contacto">
-        <section id="texto-banner" class="bg-menu"></section>
-        <div class="titulo">
-            <h1>Conocé nuestro menú mundial</h1>
-        </div>
+        <section id="banner-menu" class="position-relative">
+            <div class="bg-menu"></div>
+            <div class="titulo-banner text-white text-uppercase position-absolute d-flex justify-content-center align-items-center">
+                <h1 class="fst-italic fw-bold">Menú mundial</h1>
+            </div>
+        </section>
 
+        <div class="linea-divisora py-4" id="linea-divisoria">
+            <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+        </div>
         <!-- MENÚ MUNDIAL -->
-        <section id="menu-mundial" class="container seccion">
-            <ul class="nav nav-pills mb-3 justify-content-evenly" id="pills-tab" role="tablist">
+        <section id="menu-mundial" class="container seccion py-4">
+            <div class="container text-center">
+                <h2>Conocé nuestro <span class="fst-italic fw-bold">menú</span></h2>  
+            </div>
+            
+            <ul class="nav nav-pills my-5 justify-content-evenly" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#alemania"
                         type="button" role="tab" aria-controls="pills-home" aria-selected="true">Lunes</button>
