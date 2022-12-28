@@ -636,10 +636,6 @@ iframe {
         height: 100px;
     }
 
-    .navbar-collapse.show {
-        height: 100vh;
-    }
-
     h1 {
         font-size: 2.5rem;
     }
