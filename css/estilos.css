@@ -153,6 +153,17 @@ video {
     width: 100%;
 }
 
+.video {
+    height: calc(100vh - 70px);
+}
+
+.video video {
+    width: 100%;
+    z-index: -1;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+}
+
 /* BOTONES */
 .btn {
     width: 150px;
@@ -218,11 +229,21 @@ footer {
     font-size: .9rem;
 }
 
-/*********************** PÁGINAS (INDEX E INTERNAS) ********************/
-/* INDEX */
+/*********************** PÁGINAS (INICIO E INTERNAS) ********************/
+/* INICIO */
 .seccion {
     margin: 5rem auto;
 }
+
+.titulo-banner-video {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 
 /* SECCIÓN NOSOTROS */
 #nosotros {
@@ -356,6 +377,7 @@ footer {
     border-top-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
     color: #ffffff;
+    border: 0 !important;
 }
 
 .clientes {
@@ -387,7 +409,7 @@ footer {
 }
 
 .titulo-banner {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0 0 0 / 25%);
     width: 100%;
     top: 0;
     right: 0;
@@ -489,10 +511,6 @@ footer {
     row-gap: 10px;
 }
 
-.video video {
-    object-fit: cover;
-}
-
 #footer-eventos {
     grid-area: footer;
 }
@@ -566,13 +584,10 @@ footer {
 }
 
 .evento-carrusel {
-    width: 30%;
+    width: 35%;
     text-align: center;
 }
 
-.evento-carrusel .cuadrado {
-    width: 120px;
-}
 
 /*************************************************/
 /* PÁGINA - CONTACTO */

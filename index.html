@@ -77,13 +77,17 @@
     <!-- MAIN -->
     <main>
         <!-- VIDEO BANNER -->
-        <section id="video-banner">
-            <div>
-                <video src="./assets/videos/banner-video.mp4" autoplay loop></video>
+        <section id="video-banner" class="position-relative">
+            <div class="video position-relative">
+                <video src="./assets/videos/banner-video.mp4" loop autoplay></video>
+            </div>
+
+            <div class="titulo-banner-video position-absolute d-flex flex-wrap justify-content-center align-items-center">
+                <h1 class="letter-spacing-3 text-white">Restó del <span class="fst-italic fw-bold">mundo</span></h1>
             </div>
         </section>
 
-        <div class="container my-3">
+        <div class="container my-5">
             <div class="d-flex justify-content-center align-items-center">
                 <img src="./assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid" />
             </div>
@@ -92,7 +96,7 @@
         <section class="container d-flex flex-wrap justify-content-center align-items-center my-5 position-relative"
             id="nosotros">
             <div class="position-absolute justify-content-start text-center text-white px-0 contenedor-titulo">
-                <h1>Nosotros</h1>
+                <h2>Nosotros</h2>
             </div>
             <div class="historia text-white">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quisquam optio quam, quia, aliquid eligendi laboriosam neque dolore ab aperiam iure iusto? Neque natus porro unde a, nam cupiditate similique?</p>
@@ -139,7 +143,7 @@
             <!-- Carrusel de reseñas -->
             <div class="container">
                 <div class="owl-carousel owl-theme"">
-                    <div class=" item">
+                    <div class="item">
                     <div class="card" style="width: 18rem;">
                         <div class="clientes d-flex justify-content-center align-items-center">
                             <img src="./assets/img/cliente-1.png" class="card-img-top" alt="foto de cliente">
