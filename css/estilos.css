@@ -123,10 +123,15 @@ footer {
     color: #141827;
 }
 
+.nav-item {
+    border: 2px solid #141827;
+}
+
 .nav-pills .nav-link.active {
     background-color: #141827 !important;
     color: #ffffff !important;
-    width: 12ch;
+    width: 10ch;
+    border-radius: 0 !important;
 }
 
 /* ESTILOS OWL CAROUSEL */
@@ -338,7 +343,7 @@ footer {
 
 .contenedor-titulo {
     background-color: #62455B;
-    width: 50vw;
+    width: 300px;
     top: 30px;
     left: 0;
     padding: 0.5rem 0;
@@ -356,6 +361,11 @@ footer {
 #servicios {
     background-color: #C1D9D0;
     padding: 2rem;
+}
+
+/* SECCIÓN SERVICIOS */
+.icono-servicio {
+    width: 65px;
 }
 
 /* SECCIÓN CARRUSEL (RESEÑAS) */
@@ -401,7 +411,7 @@ footer {
 #menu-mundial {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1.5fr;
     grid-template-areas:
         "banner-menu"
         "linea-divisoria"
@@ -448,20 +458,6 @@ footer {
     border-bottom-right-radius: 0 !important;
 }
 
-.dropdown-menu.show {
-    width: 75%;
-    background-color: #736681;
-
-}
-
-.dropdown-menu[aria-expanded="false"] {
-    border-bottom: 1px solid #141827;
-}
-
-.dropdown-menu.show > li > a {
-    color: #ffffff !important;
-}
-
 .platos {
     background-color: rgb(115 102 129 / 45%);
     box-shadow: 0px 10px 15px -3px rgb(48 48 48 / 18%);
@@ -476,39 +472,41 @@ footer {
     height: 100%;
     justify-content: space-evenly;
     padding: 1rem;
-  }
-  
-  /* Card ============================================*/
-  
+}
+
+/* Card ============================================*/
+
   /* Area to hold an individual card */
-  .card-section {
+.card-section {
     align-items: center;
     display: flex;
     height: 100%;
     justify-content: center;
     width: 100%;
-  }
-  
+}
+
   /* A container to hold the flip card and the inside page */
-  .card-menu {
+.card-menu {
     background-color: rgba(0,0,0, .05);
     box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
-    height: 15rem;
     position: relative;
     transition: all 1s ease;
     width: 15rem;
-  }
-  
+    height: 15rem;
+}
+
 .bg-carta-menu {
     background-image: url("../assets/img/carta-menu.webp");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
   /* Flip card - covering both the front and inside front page */
-  
+
   /* An outer container to hold the flip card. This excludes the inside page */
-  .flip-card {
+.flip-card {
     height: 15rem;
     perspective: 100rem;
     position: absolute;
@@ -517,16 +515,16 @@ footer {
     visibility: hidden;
     width: 15rem;
     z-index: 100;
-  }
-  
+}
+
   /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
   /* This is done so content in the inside page can be selected */
   .flip-card > * {
     visibility: visible;
-  }
-  
+}
+
   /* An inner container to hold the flip card. This excludes the inside page */
-  .flip-card__container {
+.flip-card__container {
     height: 100%;
     position: absolute;
     right: 0;
@@ -534,69 +532,133 @@ footer {
     transform-style: preserve-3d;
     transition: all 1s ease;
     width: 100%;
-  }
-  
-  .card-front,
-  .card-back {
+}
+
+.card-front,
+.card-back {
     backface-visibility: hidden;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-  }
-  
+}
+
+  /* ALEMANIA */
+
+.card-alemania {
+    background-image: url("../assets/img/alemania.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* FRANCIA */
+
+.card-francia {
+    background-image: url("../assets/img/francia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* JAPÓN */
+
+.card-japon {
+    background-image: url("../assets/img/japon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* MÉXICO */
+
+.card-mexico {
+    background-image: url("../assets/img/mexico.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* ARGENTINA */
+
+.card-argentina {
+    background-image: url("../assets/img/argentina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* ESPAÑA */
+
+.card-espania {
+    background-image: url("../assets/img/espania.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+}
+
+/* ITALIA */
+
+.card-italia {
+    background-image: url("../assets/img/italia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
   /* Styling for the front side of the flip card */
-  
+
   /* container for the front side */
-  .card-front {
+.card-front {
     background-color: #fafbfa;
     height: 15rem;
     width: 15rem;
-  }
-  
+}
+
   /* Front side's top section */
-  .card-front__tp {
+.card-front__tp {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 12rem;
+    height: 15rem;
     justify-content: center;
     padding: .75rem;
-  }
+}
 
-  
+
   /* Front card's bottom section */
-  .card-front__bt {
+.card-front__bt {
     align-items: center;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .card-front__heading {
+.card-front__heading {
     color: gold;
     font-size: 1.5rem;
-  }
-  
+}
+
   /* Styling for the back side of the flip card */
-  
-  .card-back {
+
+.card-back {
     background-color: #fafbfa;
     transform: rotateY(180deg);
-  }
-  
+    height: 15rem;
+}
+
   /* Specifically targeting the <video> element */
-  .video__container {
+.video__container {
     clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
     height: auto;
     min-height: 100%;
     object-fit: cover;
     width: 100%;
-  }
-  
+}
+
   /* Inside page */
-  
-  .inside-page {
+
+.inside-page {
     background-color: #fafbfa;
     box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
     height: 100%;
@@ -606,18 +668,22 @@ footer {
     transition: all 1s ease;
     width: 15rem;
     z-index: 1;
-  }
-  
-  .inside-page__container {
+}
+
+.inside-page__container {
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100%;
     text-align: center; 
     width: 100%;
-  }
+}
 
-  /**************************************************/
+.card-menu:hover .flip-card__container {
+    transform: rotateY(-100deg);
+}
+
+/**************************************************/
 /* PÁGINA - SERVICIOS */
 
 #banner-servicios > .bg-banner-menu {
@@ -800,25 +866,70 @@ iframe {
 
   /* MEDIA QUERIES MOBILE FIRST */
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+/* INICIO */
+
+h1 {
+    font-size: 3rem;
+}
+
+
     /* Functionality ====================================*/
-  
+
   /* This is to keep the card centered (within its container) when opened */
-  .card-menu:hover {
+.card-menu:hover {
     box-shadow:
     -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
-    width: 30rem;
     cursor: pointer;
-  }
-  
+}
+
   /* When the card is hovered, the flip card container will rotate */
-  .card-menu:hover .flip-card__container {
-    transform: rotateY(-180deg);
-  }
-  
+.card-menu:hover .flip-card__container {
+    transform: rotateY(-120deg);
+}
+
   /* When the card is hovered, the shadow on the inside page will shrink to the left */
-  .card-menu:hover .inside-page {
+.card-menu:hover .inside-page {
     box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
-  }
-  
-  }
+}
+
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .bg-carta-menu {
+        background-image: url("../assets/img/carta-menu-desktop.png");
+    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor-titulo {
+        width: 300px;
+    }
+
+    .card-front {
+        height: 30rem;
+    }
+
+    /* CARD MENU */
+    .card-menu {
+        height: 30rem;
+    }
+
+    .card-front__tp {
+        height: 30rem;
+    }
+
+    .card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+    height: 30rem;
+    
+}
+
+}
