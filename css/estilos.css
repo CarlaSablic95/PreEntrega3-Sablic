@@ -8,10 +8,33 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif !important;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
 .letter-spacing-3 {
     letter-spacing: 3px;
+}
+
+.button-top {
+    right: 25px;
+    bottom: 30px;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 3px solid gold;
+}
+
+.button-top > a > img {
+    width: 100%;
 }
 
 /* ESTILOS BOOTSTRAP */
@@ -36,19 +59,79 @@ a.nav-link:hover {
     font-weight: 900;
 }
 
+/* GRID CSS */
+
+header {
+    width: 100%;
+    grid-area: header;
+}
+
+#main {
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr 0.2fr 1fr;
+    grid-template-areas: 
+    "video"
+    "divisor"
+    "nosotros"
+    "servicios"
+    "divisor-2"
+    "carrusel"
+    ;
+}
+
+footer {
+    width: 100%;
+    grid-area: footer;
+}
+
+/* ARMADO DE GRID PARA EL MAIN */
+
+#video {
+    width: 100%;
+    grid-area: video;
+}
+
+#divisor {
+    width: 100%;
+    grid-area: divisor;
+}
+
+#nosotros {
+    width: 100%;
+    grid-area: nosotros;
+}
+
+#servicios {
+    width: 100%;
+    grid-area: servicios;
+}
+
+#divisor-2 {
+    width: 100%;
+    grid-area: divisor-2;
+}
+
+#carrusel {
+    grid-area: carrusel;
+    
+}
+
 #pills-tab li button {
     color: #141827;
 }
 
 .nav-pills .nav-link.active {
-    background-color: #62455B !important;
-    border-radius: 10px !important;
+    background-color: #141827 !important;
     color: #ffffff !important;
+    width: 12ch;
 }
 
 /* ESTILOS OWL CAROUSEL */
 .owl-carousel {
-    display: block !important;
+    display: grid !important;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -80,7 +163,7 @@ a.nav-link:hover {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -112,8 +195,8 @@ a:active {
 /* IMAGENES E ÍCONOS */
 
 .logo-header {
-    width: 115px;
-    height: 115px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
 }
 
@@ -127,7 +210,7 @@ a:active {
     width: 100px;
 }
 
-.reseñas img {
+.carrusel img {
     width: 100px;
     border-radius: 50%;
 }
@@ -244,7 +327,6 @@ footer {
     left: 0;
 }
 
-
 /* SECCIÓN NOSOTROS */
 #nosotros {
     background-image: url('../assets/img/banner-nosotros.jpg');
@@ -256,117 +338,33 @@ footer {
 
 .contenedor-titulo {
     background-color: #62455B;
-    width: 30vw;
+    width: 50vw;
     top: 30px;
     left: 0;
+    padding: 0.5rem 0;
+    border-bottom-right-radius: 1rem;
 }
 
 .historia {
     background-color: #0f10175c;
     backdrop-filter: blur(5px);
-    width: 65vw;
-    padding: 5rem;
+    width: 90vw;
+    padding: 2rem;
 }
 
-/* SECCIÓN SERVICIOS */
-#seccion-servicios {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-}
-
-#header-servicios {
-    grid-area: header;
-}
-
-#main-servicios {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.1fr 0.1fr 0.1fr repeat(3, 0.5fr);
-    grid-template-areas:
-        "banner banner"
-        "linea linea"
-        "titulo-servicios titulo-servicios"
-        "takeaway takeaway"
-        "delivery delivery"
-        "reservas reservas";
-}
-
-#linea-divisoria {
-    grid-area: linea;
-    flex-wrap: wrap;
-}
-
-#titulo-servicios {
-    grid-area: takeaway;
-    flex-wrap: wrap;
-}
-
-#take-away {
-    grid-area: takeaway;
-    flex-wrap: wrap;
-}
-
-#delivery {
-    grid-area: delivery;
-    flex-wrap: wrap;
-}
-
-#reservas {
-    grid-area: reservas;
-}
-
-#banner-servicios {
-    grid-area: banner;
-}
-
-#footer-servicios {
-    grid-area: footer;
-}
 
 #servicios {
     background-color: #C1D9D0;
     padding: 2rem;
 }
 
-#servicios h2 {
-    font-size: 2.5rem;
-    color: #141827;
-}
-
-#servicios article {
-    display: inline-block;
-    width: 25%;
-    margin: 2rem 1rem;
-    padding: 4rem;
-    border-radius: 1rem;
-    color: #141827;
-}
-
-#servicios article img {
-    margin-bottom: 1rem;
-    width: 120px;
-}
-
-#servicios article h4 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-/* SECCIÓN RESEÑAS */
-#reseñas {
+/* SECCIÓN CARRUSEL (RESEÑAS) */
+#carrusel {
     width: 100%;
     text-align: center;
 }
 
-#reseñas h2 {
+#carrusel h2 {
     margin-bottom: 2rem;
 }
 
@@ -400,6 +398,31 @@ footer {
 /*************************************************/
 /* PÁGINA - MENÚ MUNDIAL*/
 
+#menu-mundial {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr;
+    grid-template-areas:
+        "banner-menu"
+        "linea-divisoria"
+        "menu-paises";
+}
+
+#banner-menu {
+    width: 100%;
+    grid-area: banner-menu;
+}
+
+#linea-divisoria {
+    width: 100%;
+    grid-area: linea-divisoria;
+}
+
+#menu-paises {
+    width: 100%;
+    grid-area: menu-paises;
+}
+
 #banner-menu > .bg-menu {
     background-image: url('../assets/img/banner-menu.jpeg');
     background-size: cover;
@@ -415,27 +438,188 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
+    /* height: calc(100vh - 70px); */
+    max-height: 100vh;
 }
 
-#menu-mundial {
-    margin: 2rem auto 5rem;
+.btn-menu-mundial {
+    border-bottom: 1px solid #141827;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
-.menu-paises div a {
-    color: #ffffff;
+.dropdown-menu.show {
+    width: 75%;
+    background-color: #736681;
+
 }
 
-.bandera {
-    top: -25px;
-    left: -50px;
+.dropdown-menu[aria-expanded="false"] {
+    border-bottom: 1px solid #141827;
 }
 
-.bandera img {
-    width: 150px;
+.dropdown-menu.show > li > a {
+    color: #ffffff !important;
 }
 
-/**************************************************/
+.platos {
+    background-color: rgb(115 102 129 / 45%);
+    box-shadow: 0px 10px 15px -3px rgb(48 48 48 / 18%);
+}
+
+/* CARTA MENÚ */
+/* Container to hold all cards in one place */
+.card-area {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  
+  /* Card ============================================*/
+  
+  /* Area to hold an individual card */
+  .card-section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* A container to hold the flip card and the inside page */
+  .card-menu {
+    background-color: rgba(0,0,0, .05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
+    height: 15rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+  }
+  
+.bg-carta-menu {
+    background-image: url("../assets/img/carta-menu.webp");
+    background-size: cover;
+
+}
+
+  /* Flip card - covering both the front and inside front page */
+  
+  /* An outer container to hold the flip card. This excludes the inside page */
+  .flip-card {
+    height: 15rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 100;
+  }
+  
+  /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+  /* This is done so content in the inside page can be selected */
+  .flip-card > * {
+    visibility: visible;
+  }
+  
+  /* An inner container to hold the flip card. This excludes the inside page */
+  .flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+  }
+  
+  .card-front,
+  .card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Styling for the front side of the flip card */
+  
+  /* container for the front side */
+  .card-front {
+    background-color: #fafbfa;
+    height: 15rem;
+    width: 15rem;
+  }
+  
+  /* Front side's top section */
+  .card-front__tp {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    padding: .75rem;
+  }
+
+  
+  /* Front card's bottom section */
+  .card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-front__heading {
+    color: gold;
+    font-size: 1.5rem;
+  }
+  
+  /* Styling for the back side of the flip card */
+  
+  .card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+  }
+  
+  /* Specifically targeting the <video> element */
+  .video__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  /* Inside page */
+  
+  .inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+  }
+  
+  .inside-page__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center; 
+    width: 100%;
+  }
+
+  /**************************************************/
 /* PÁGINA - SERVICIOS */
+
 #banner-servicios > .bg-banner-menu {
     background-image: url('../assets/img/servicios.jpg');
     background-repeat: no-repeat;
@@ -450,8 +634,8 @@ footer {
 
 .info-servicios {
     background-color: #736681;
-    width: 30vw;
-    height: 30vh;
+    width: 75vw;
+    height: 35vh;
     border-radius: 1rem;
     padding: 2rem;
     transition: transform .5s;
@@ -465,8 +649,12 @@ footer {
     text-align: center;
 }
 
-.servicios img {
-    width: 70px;
+.servicio {
+    width: 50vw;
+}
+
+.servicio img {
+    width: 50%;
 }
 
 .menu-paises {
@@ -480,47 +668,20 @@ footer {
 
 /**************************************************/
 /* PÁGINA - EVENTOS */
-#layout-grid {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-}
-
-#header-eventos {
-    grid-area: header;
-}
 
 #main-eventos {
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 0.2fr repeat(3, 0.2fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr repeat(3, 0.5fr);
     grid-template-areas:
-        "video video"
-        "divisor divisor"
-        "aniversario aniversario"
-        "graduaciones graduaciones"
-        "cumpleanios cumpleanios";
+        "video"
+        "divisor"
+        "aniversario"
+        "graduaciones"
+        "cumpleanios";
     column-gap: 10px;
     row-gap: 10px;
-}
-
-#footer-eventos {
-    grid-area: footer;
-}
-
-#banner-video {
-    grid-area: video;
-}
-
-#divisor {
-    grid-area: divisor;
 }
 
 .owl-carousel .item .eventos-cards {
@@ -588,47 +749,39 @@ footer {
     text-align: center;
 }
 
-
 /*************************************************/
 /* PÁGINA - CONTACTO */
-#seccion-contacto {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-    column-gap: 2px;
-}
-
-#header-contacto {
-    grid-area: header;
-}
 
 #main-contacto {
-    grid-area: main;
     background-image: url('../assets/img/bg-contacto.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-#footer {
-    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+    "titulo-contacto"
+    "mapa-formulario";
 }
 
 .seccion #titulo-contacto {
     padding: 3rem 0;
 }
 
+#titulo-contacto {
+    grid-area: titulo-contacto;
+}
+
+#mapa-formulario {
+    grid-area: mapa-formulario;
+}
+
 #mapa {
     padding: 0 2rem;
-    grid-area: mapa;
-    width: 35vw;
+    display: flex;
+    order: 2;
 }
 
 iframe {
@@ -636,56 +789,36 @@ iframe {
 }
 
 #formulario {
+    display: grid;
+    grid-area: formulario;
     background-color: #736681b5;
     backdrop-filter: blur(4px);
     padding: 2.5rem 2rem;
     border-radius: 1rem;
-    width: 25vw;
 }
 
-/********************** MEDIA QUERIES   *******************************/
 
-@media (max-width: 992px) {
-    .logo-header {
-        width: 100px;
-        height: 100px;
-    }
+  /* MEDIA QUERIES MOBILE FIRST */
 
-    h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* INICIO */
-    .historia {
-        padding: 3rem;
-    }
-
-    /* INTERNA CONTACTO */
-    #mapa {
-        padding: 0;
-    }
-
-    #mapa, #formulario {
-        width: 80vw;
-    }
-
-}
-
-@media (max-width: 576px) {
-
-    /* INICIO */
-
-    .historia {
-        padding: 2rem;
-    }
-
-    /* PÁGINA EVENTOS */
-    #seccion-aniversarios {
-        flex-wrap: wrap;
-    }
-
-
-}
+  @media screen and (min-width: 768px) {
+    /* Functionality ====================================*/
+  
+  /* This is to keep the card centered (within its container) when opened */
+  .card-menu:hover {
+    box-shadow:
+    -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
+    width: 30rem;
+    cursor: pointer;
+  }
+  
+  /* When the card is hovered, the flip card container will rotate */
+  .card-menu:hover .flip-card__container {
+    transform: rotateY(-180deg);
+  }
+  
+  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+  .card-menu:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+  }
+  
+  }
