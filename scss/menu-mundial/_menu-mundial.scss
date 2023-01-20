@@ -1,0 +1,297 @@
+
+// ESTILOS MAIN (MENÚ MUNDIAL)
+
+// BOTONES MENÚ
+.nav-pills {
+    .nav-item {
+        border: 2px solid $black;
+        .nav-link.active {
+            background-color: $black !important;
+            color: $white !important;
+            width: 10ch;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+// BOTONES (DÍAS DE LA SEMANA)
+#pills-tab {
+    li {
+        button {
+            color: $black;
+        }
+    }
+}
+
+#menu-mundial {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1.5fr;
+    grid-template-areas:
+        "banner-menu"
+        "linea-divisoria"
+        "menu-paises";
+}
+
+#banner-menu {
+    width: $ancho-100;
+    grid-area: banner-menu;
+    .bg-menu {
+        background-image: url('../assets/img/banner-menu.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: $centro;
+        height: calc(100vh - 70px);
+    }
+}
+
+#linea-divisoria {
+    width: 100%;
+    grid-area: linea-divisoria;
+}
+
+#menu-paises {
+    width: $ancho-100;
+    grid-area: menu-paises;
+}
+
+// CARTA MENÚ INTERNACIONAL
+
+.card-menu {
+    background-color: rgba(255, 0, 0, 0.05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+    height: 30rem;
+}
+
+.bg-carta-menu {
+    background-image: url("../assets/img/carta-menu.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+  /* Flip card - covering both the front and inside front page */
+
+  /* An outer container to hold the flip card. This excludes the inside page */
+.tarjeta-invertida {
+    height: 30rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 100;
+}
+
+  /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+  /* This is done so content in the inside page can be selected */
+  .tarjeta-invertida > * {
+    visibility: visible;
+}
+
+  /* An inner container to hold the flip card. This excludes the inside page */
+.contenedor-tarjeta-invertida {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.tarjeta-frente,
+.tarjeta-dorso {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+  /* ALEMANIA */
+
+.card-alemania {
+    background-image: url("../assets/img/alemania.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* FRANCIA */
+
+.card-francia {
+    background-image: url("../assets/img/francia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* JAPÓN */
+
+.card-japon {
+    background-image: url("../assets/img/japon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* MÉXICO */
+
+.card-mexico {
+    background-image: url("../assets/img/mexico.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* ARGENTINA */
+
+.card-argentina {
+    background-image: url("../assets/img/argentina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* ESPAÑA */
+
+.card-espania {
+    background-image: url("../assets/img/espania.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+}
+
+/* ITALIA */
+
+.card-italia {
+    background-image: url("../assets/img/italia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  /* Styling for the front side of the flip card */
+
+  /* container for the front side */
+.tarjeta-frente {
+    background-color: #fafbfa;
+    height: 30rem;
+    width: 15rem;
+}
+
+  /* Front side's top section */
+.tarjeta-frente-top {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+    padding: .75rem;
+}
+
+
+  /* Front card's bottom section */
+.tarjeta-frente-bottom {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-tarjeta {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+  /* Styling for the back side of the flip card */
+
+.tarjeta-dorso {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+    height: 30rem;
+}
+
+  /* Inside page */
+
+.pagina-interna {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+}
+
+.contenedor-pagina-interna{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center; 
+    width: 100%;
+}
+
+.card-menu:hover .contenedor-tarjeta-invertida {
+    transform: rotateY(-100deg);
+}
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERIES MOBILE FIRST */
+@media screen and (min-width: 768px) {
+
+/* INICIO */
+
+h1 {
+    font-size: 3rem;
+}
+
+
+    /* Functionality ====================================*/
+
+  /* This is to keep the card centered (within its container) when opened */
+.card-menu:hover {
+    box-shadow:
+    -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+  /* When the card is hovered, the flip card container will rotate */
+.card-menu:hover .contenedor-tarjeta-invertida {
+    transform: rotateY(-120deg);
+}
+
+  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+.card-menu:hover .pagina-interna {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+}
+
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .bg-carta-menu {
+        background-image: url("../assets/img/carta-menu-desktop.png");
+    
+    }
+}

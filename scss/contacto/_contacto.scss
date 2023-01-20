@@ -1,0 +1,53 @@
+// ESTILOS MAIN (CONTACTO)
+
+// BOTÓN FORMULARIO
+.btn-enviar {
+    background-color: $violet-dark !important;
+    color: $white !important;
+    background: linear-gradient(-68deg, #564152d6, #b9a4d0c7);
+    text-transform: $mayuscula;
+    letter-spacing:2px;
+}
+
+#main-contacto {
+    background-image: url('../assets/img/bg-contacto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+    "titulo-contacto"
+    "mapa-formulario";
+}
+
+.seccion #titulo-contacto {
+    padding: 3rem 0;
+        #titulo-contacto {
+        grid-area: titulo-contacto;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+#mapa-formulario {
+    grid-area: mapa-formulario;
+    #mapa {
+        padding: 0 2rem;
+        display: flex;
+        order: 2;
+    }
+    iframe {
+        width: 100%;
+    }
+    #formulario {
+        background-color: #736681b5;
+        backdrop-filter: blur(4px);
+        padding: 2.5rem 2rem;
+        border-radius: 1rem;
+    }
+}
+

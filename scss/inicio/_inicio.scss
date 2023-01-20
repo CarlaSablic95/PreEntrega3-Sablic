@@ -1,0 +1,167 @@
+// ESTILOS MAIN (INDEX)
+
+#main-inicio {
+        width: $ancho-100;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr 0.2fr 1fr;
+        grid-template-areas: 
+        "video"
+        "divisor"
+        "nosotros"
+        "servicios"
+        "divisor2"
+        "carrusel"
+        ;
+}
+
+/* ARMADO DE GRID PARA EL MAIN */
+
+#video {
+    width: $ancho-100;
+    grid-area: video;
+}
+
+#divisor {
+    width: $ancho-100;
+    grid-area: divisor;
+}
+
+#nosotros {
+    width: $ancho-100;
+    grid-area: nosotros;
+}
+
+#servicios {
+    width: $ancho-100;
+    grid-area: servicios;
+}
+
+#divisor-2 {
+    width: $ancho-100;
+    grid-area: divisor2;
+}
+
+#carrusel {
+    grid-area: carrusel;
+}
+
+/* IMAGENES E ÍCONOS */
+.servicios {
+    article {
+        img {
+            width: 100px;
+        }
+    }
+}
+
+.carrusel {
+    img {
+        width: 100px;
+        border-radius: 50%;
+    }
+}
+
+.calificacion {
+    img {
+        width: 20px;
+    }
+}
+
+/* VIDEO */
+video {
+    width: $ancho-100;
+}
+
+.video {
+    height: calc(100vh - 70px);
+}
+
+.video {
+    video {
+        width: $ancho-100;
+        z-index: -1;
+        height: calc(100vh - 70px);
+        object-fit: cover;
+    }
+}
+
+/********** PÁGINAS (INICIO E INTERNAS) ********/
+// SECCIÓN NOSOTROS
+#nosotros {
+    background-image: url('../assets/img/banner-nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+// SECCIÓN SERVICIOS
+#servicios {
+    background-color: $green-light;
+    padding: 2rem;
+}
+
+.icono-servicio {
+    width: 65px;
+}
+
+.contenedor-titulo {
+    background-color: $violet-dark;
+    width: 300px;
+    top: 30px;
+    left: 0;
+    padding: 0.5rem 0;
+    border-bottom-right-radius: 1rem;
+}
+
+.historia {
+    background-color: #0f10175c;
+    backdrop-filter: blur(5px);
+    width: 90vw;
+    padding: 2rem;
+}
+
+// SECCIÓN RESEÑAS (CARRUSEL)
+#carrusel {
+    width: $ancho-100;
+    text-align: $centro;
+}
+
+#carrusel {
+    h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.owl-carousel {
+    .item {
+            .card {
+            margin: 2rem;
+            padding: 2rem;
+            background-color: $violet-dark;
+            border-top-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+            color: $white;
+            border: 0 !important;
+        }
+    }
+}
+
+.clientes {
+    margin: 1.5rem auto;
+        img {
+            border-radius: 50%;
+            width: 120px !important;
+        }
+}
+
+.card-body {
+    .valoracion {
+        margin-bottom: 1rem;
+        img {
+            width: 30px !important;
+        }
+    }  
+}

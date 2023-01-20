@@ -1,0 +1,30 @@
+// ESTILOS MAIN (SERVICIOS)
+
+#banner-servicios  {
+    .bg-banner-menu {
+        background-image: url('../assets/img/servicios.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60% $centro;
+        height: $alto-100;
+    }
+}
+
+.info-servicios {
+    background-color: $lila;
+    width: 400px;
+    height: 35vh;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform .5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.servicio {
+    width: 35%;
+    img {
+        width: 100%;
+    }
+}
