@@ -1,5 +1,11 @@
 // ESTILOS MAIN (CONTACTO)
-
+#titulo-contacto {
+        h1 {
+            font-size: 2.5rem;
+            text-align: $centro;
+            letter-spacing: $letter-spacing-3;
+        }
+}
 // BOTÓN FORMULARIO
 .btn-enviar {
     background-color: $violet-dark !important;
@@ -23,6 +29,10 @@
     "mapa-formulario";
 }
 
+#titulo-contacto {
+    grid-area: titulo-contacto;
+}
+
 .seccion #titulo-contacto {
     padding: 3rem 0;
         #titulo-contacto {
@@ -36,9 +46,9 @@
 #mapa-formulario {
     grid-area: mapa-formulario;
     #mapa {
-        padding: 0 2rem;
         display: flex;
         order: 2;
+        padding: 0 .5rem;
     }
     iframe {
         width: 100%;
@@ -51,3 +61,55 @@
     }
 }
 
+// MEDIA QUERIES
+
+@media screen and (min-width: 320px) {
+    #titulo-contacto {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #formulario {
+        width: 80%;
+    }
+
+    #mapa {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #formulario {
+        width: 40%;
+    }
+
+    #mapa {
+        width: 40%;
+    }
+
+    #titulo-contacto {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    #main-contacto {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "titulo-contacto titulo-contacto"
+        "mapa-formulario mapa-formulario";
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    #formulario {
+        width: 30%;
+    }
+
+    #mapa {
+        width: 30%;
+    }
+}

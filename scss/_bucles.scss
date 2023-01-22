@@ -1,0 +1,27 @@
+// SERVICIOS (INDEX)
+
+@for $i from 1 through 3 {
+    #servicio-#{$i} {
+            img {
+                width: 60px;
+            }
+    
+            h4 {
+                font-size: 1.5rem;
+            }
+    }
+}
+
+// CARRUSEL (INDEX)
+
+@for $i from 1 through 6 {
+    #card-#{$i}{
+                margin: 2rem;
+                padding: 2rem;
+                background-color: $violet-dark;
+                border-top-left-radius: 5rem;
+                border-bottom-right-radius: 5rem;
+                color: $white;
+                border: 0 !important;
+            }
+}

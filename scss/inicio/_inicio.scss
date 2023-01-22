@@ -70,9 +70,6 @@
 }
 
 /* VIDEO */
-video {
-    width: $ancho-100;
-}
 
 .video {
     height: calc(100vh - 70px);
@@ -118,9 +115,7 @@ video {
 
 .historia {
     background-color: #0f10175c;
-    backdrop-filter: blur(5px);
-    width: 90vw;
-    padding: 2rem;
+    backdrop-filter: blur(20px);
 }
 
 // SECCIÓN RESEÑAS (CARRUSEL)
@@ -132,20 +127,6 @@ video {
 #carrusel {
     h2 {
         margin-bottom: 2rem;
-    }
-}
-
-.owl-carousel {
-    .item {
-            .card {
-            margin: 2rem;
-            padding: 2rem;
-            background-color: $violet-dark;
-            border-top-left-radius: 5rem;
-            border-bottom-right-radius: 5rem;
-            color: $white;
-            border: 0 !important;
-        }
     }
 }
 
@@ -164,4 +145,30 @@ video {
             width: 30px !important;
         }
     }  
+}
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 992px) {
+
+    #main-inicio {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "video video video"
+        "divisor divisor divisor"
+        "nosotros nosotros nosotros"
+        "servicios servicios servicios"
+        "divisor2 divisor2 divisor2"
+        "carrusel carrusel carrusel"
+        ;
+}
+
+#nosotros {
+        #historia-resto {
+            padding: 2rem;
+            font-size: 1rem;
+            width: 80%;
+        }
+    }
+
 }

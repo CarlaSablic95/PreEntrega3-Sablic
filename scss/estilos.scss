@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./condicionales";
+@import "./bucles";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import "./header";
 @import "./footer";
@@ -12,6 +14,7 @@
 html {
     scroll-behavior: smooth;
     body {
+        background-color: #f1f1f1;
         position: $relativo;
         font-family: 'Montserrat', sans-serif !important;
         width: $ancho-100;
@@ -41,6 +44,7 @@ html {
 
 // BOTÓN (IR ARRIBA)
 .button-top {
+    background-color: $black;
     right: 25px;
     bottom: 30px;
     z-index: 1000;
@@ -148,22 +152,42 @@ h2 {
     margin: 5rem auto;
 }
 
-.titulo-banner-video {
-    width: $ancho-100;
-    background-color: $bg-video;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
 .titulo-banner {
     background-color: $bg-portada;
-    width: 100%;
+    width: $ancho-100;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     /* height: calc(100vh - 70px); */
     max-height: 100vh;
+}
+
+.titulo-banner-video {
+    @extend .titulo-banner;
+        background-color: $bg-video;
+    }
+
+
+// SITEMAP
+.sitemap {
+    height: 70vh;
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 992px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: $centro;
+    }
 }

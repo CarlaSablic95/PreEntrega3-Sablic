@@ -1,4 +1,56 @@
 // ESTILOS MAIN (SERVICIOS)
+#main-servicios {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr repeat(3, 0.5fr);
+    grid-template-areas:
+        "banner"
+        "linea-divisoria"
+        "take-away"
+        "delivery"
+        "reservas";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+/* ANIVERSARIO: INFO - CARRUSEL */
+
+#banner-servicios {
+    grid-area: banner;
+}
+
+#linea-divisoria {
+    grid-area: linea-divisoria;
+}
+
+/* TAKE AWAY */
+#take-away {
+    grid-area: take-away;
+    display: flex;
+    justify-content: $centro;
+    align-items: $centro;
+    flex-wrap: wrap;
+}
+
+/* DELIVERY */
+#delivery {
+    grid-area: delivery;
+    display: flex;
+    justify-content: $centro;
+    align-items: $centro;
+    flex-wrap: wrap;
+}
+
+// RESERVAS
+#reservas {
+    grid-area: reservas;
+    display: flex;
+    justify-content: $centro;
+    align-items: $centro;
+    flex-wrap: wrap;
+}
 
 #banner-servicios  {
     .bg-banner-menu {
@@ -12,19 +64,43 @@
 
 .info-servicios {
     background-color: $lila;
+    box-shadow: inset 0rem 0rem 4.55rem 0rem #00000033;
     width: 400px;
     height: 35vh;
     border-radius: 1rem;
     padding: 2rem;
-    transition: transform .5s;
-        &:hover {
-            transform: scale(1.1);
-        }
 }
 
-.servicio {
-    width: 35%;
-    img {
-        width: 100%;
+// MEDIA QUERIES
+
+@media screen and (min-width: 992px) {
+    #main-servicios {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 0.2fr repeat(3, 0.5fr);
+        grid-template-areas:
+            "banner banner"
+            "linea-divisoria linea-divisoria"
+            "take-away take-away"
+            "delivery delivery"
+            "reservas reservas";
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    
+}
+
+@media (min-width: 1366px) {
+    .info-servicios {
+        width: 450px;
+    }
+
+    .servicio {
+        width: 450px;
+        justify-content: $centro;
+        img {
+            width: 100%;
+        }
     }
 }

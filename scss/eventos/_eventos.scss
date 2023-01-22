@@ -22,7 +22,8 @@
             padding: 0;
             border-top-left-radius: 0;
             border-bottom-right-radius: 0;
-            background-color: $white;
+            background-color: transparent;
+            border: none;
             .card-body {
                 .evento-graduacion {
                     img {
@@ -37,6 +38,10 @@
             }
         }
     }
+}
+
+#banner-video {
+    grid-area: video;
 }
 
 /* ANIVERSARIO: INFO - CARRUSEL */
@@ -66,11 +71,13 @@
     flex-wrap: wrap;
 }
 
+
 .eventos {
     background-color: #736681cf;
+    box-shadow: inset 0rem 0rem 4.55rem 0rem #00000055;
     padding: 2rem;
     border-radius: 1rem;
-    width: 400px;
+    width: 350px;
     height: 250px;
         h1 {
             text-align: $centro;
@@ -86,11 +93,70 @@
 }
 
 
-// MEDIA QUERIES 
+// MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+
+    #seccion-aniversarios {
+        .eventos {
+            width: 450px;
+        }
+    }
+
+    #seccion-graduaciones {
+        .eventos {
+            width: 450px;
+        }
+    }
+
+    #seccion-cumpleanios {
+        .eventos {
+            width: 450px;
+        }
+    }
+}
+
+
 @media screen and (min-width: 992px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    #main-eventos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "video video"
+            "divisor divisor"
+            "aniversario aniversario"
+            "graduaciones graduaciones"
+            "cumpleanios cumpleanios";
+    }
+
+
     .evento-carrusel {
         width: 35%;
         text-align: $centro;
     }
-}
 
+    #seccion-aniversarios {
+        .eventos {
+            width: 450px;
+        }
+    }
+
+    #seccion-graduaciones {
+        .eventos {
+            width: 450px;
+        }
+    }
+
+    #seccion-cumpleanios {
+        .eventos {
+            width: 450px;
+        }
+    }
+}

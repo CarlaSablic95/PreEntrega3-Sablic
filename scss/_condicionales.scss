@@ -1,0 +1,23 @@
+$vista: mobile;
+
+body {
+    @if $vista == mobile {
+        @media (min-width: 320px) {
+            #nosotros {
+                .contenedor-titulo {
+                    width: 330px;
+                    top: 25px;
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+                .historia {
+                    padding: 0.9rem;
+                    font-size: 0.85rem;
+                    width: $ancho-100 - 10;
+                }
+            }
+        
+        }
+    }
+}
