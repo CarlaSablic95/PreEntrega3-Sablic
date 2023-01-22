@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentación de nuestra carta de menú. Nos destacamos en ofrecer un menú internacional variado cada día.">
+    <meta name="keywords" content="carta, menú, Argentina, Francia, Alemania, Japón, Italia, México, cocina internacional">
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
@@ -86,26 +88,9 @@
         <section id="menu-paises" class="container-fluid py-4">
             <div class="container text-center">
                 <h2>Conocé nuestro <span class="fst-italic fw-bold">menú</span></h2>
-                <p class="container">Nuestros platos son variados, por eso te presentamos nuestra carta de menú para que puedas deleitar en nuestro restó el plato de tu país favorito.</p> 
             </div>
-            <!-- DROPDOWN VISIBLE PARA VERSIÓN MOBILE -->
-
-            <!-- <div class="d-md-none mb-5 d-flex justify-content-evenly">
-                <select class="form-select w-75 " aria-label="Default select example">
-                    <option selected>Ver menú</option>
-                    <option value="Lunes" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#alemania" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Lunes</option>
-                    <option value="Martes">Martes</option>
-                    <option value="Miercoles">Miércoles</option>
-                    <option value="Jueves">Jueves</option>
-                    <option value="Argentina">Viernes</option>
-                    <option value="Espania">Sábado</option>
-                    <option value="Italia">Domingo</option>
-                </select>
-            </div> -->
-
-           
-
-            <!-- BOTONES VISIBLES PARA VERSIÓN TABLET / DESKTOP -->
+        
+            <!-- BOTONES DÍAS PARA EL MENÚ -->
             <ul class="nav nav-pills my-5 justify-content-evenly" id="pills-tab" role="tablist">
                 <li class="nav-item mb-3" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#alemania"
@@ -151,30 +136,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-alemania"></div>
+                                            <div class="tarjeta-dorso position-absolute card-alemania"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h4 class="titulo-pagina-interna text-uppercase bold">
                                                Entradas: 
                                             </h4>
 
                                             <h5 class="titulo-pagina-interna">
-                                                Kartoffelpuffer
+                                                Kartoffelsalat
                                             </h5>
                                             <p class="pagina-interna-texto">
                                                 Tortilla de papas ........ $10.000
@@ -195,31 +174,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-alemania"></div>
+                                            <div class="tarjeta-dorso position-absolute card-alemania"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                            As cities never sleep, there are always something going on, no matter what time!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -229,31 +201,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-alemania"></div>
+                                            <div class="tarjeta-dorso position-absolute card-alemania"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -272,31 +237,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-francia"></div>
+                                            <div class="tarjeta-dorso position-absolute card-francia"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -306,31 +264,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-francia"></div>
+                                            <div class="tarjeta-dorso position-absolute card-francia"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -340,31 +291,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-francia"></div>
+                                            <div class="tarjeta-dorso position-absolute card-francia"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -382,31 +326,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-japon"></div>
+                                            <div class="tarjeta-dorso position-absolute card-japon"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -416,31 +353,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-japon"></div>
+                                            <div class="tarjeta-dorso position-absolute card-japon"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -450,31 +380,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-japon"></div>
+                                            <div class="tarjeta-dorso position-absolute card-japon"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -492,31 +415,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-mexico"></div>
+                                            <div class="tarjeta-dorso position-absolute card-mexico"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -526,31 +442,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-mexico"></div>
+                                            <div class="tarjeta-dorso position-absolute card-mexico"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -560,31 +469,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-mexico"></div>
+                                            <div class="tarjeta-dorso position-absolute card-mexico"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -602,31 +504,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-argentina"></div>
+                                            <div class="tarjeta-dorso position-absolute card-argentina"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -636,31 +531,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-argentina"></div>
+                                            <div class="tarjeta-dorso position-absolute card-argentina"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -670,31 +558,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-argentina"></div>
+                                            <div class="tarjeta-dorso position-absolute card-argentina"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                                As cities never sleep, there are always something going on, no matter what time!
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero accusan.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -712,31 +593,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-espania"></div>
+                                            <div class="tarjeta-dorso position-absolute card-espania"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -746,31 +620,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-espania"></div>
+                                            <div class="tarjeta-dorso position-absolute card-espania"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -780,31 +647,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-espania"></div>
+                                            <div class="tarjeta-dorso position-absolute card-espania"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -822,31 +682,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Entrada</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-italia"></div>
+                                            <div class="tarjeta-dorso position-absolute card-italia"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -856,31 +709,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Plato principal</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-italia"></div>
+                                            <div class="tarjeta-dorso position-absolute card-italia"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -890,31 +736,24 @@
                             <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
-                                        <div class="contenedor-tarjeta-invertida">
-                                            <div class="tarjeta-frente">
-                                                <div class="tarjeta-frente-top bg-carta-menu">
+                                        <div class="contenedor-tarjeta-invertida position-absolute">
+                                            <div class="tarjeta-frente position-absolute">
+                                                <div class="tarjeta-frente-top d-flex flex-column align-items-center justify-content-center bg-carta-menu">
                                                     <h2 class="titulo-tarjeta">Postre</h2>
                                                 </div>
-                
-                                                <div class="tarjeta-frente-bottom d-md-none">
-                                                    <p class="tarjeta-texto">
-                                                        Ver carta
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="tarjeta-dorso card-italia"></div>
+                                            <div class="tarjeta-dorso position-absolute card-italia"></div>
                                         </div>
                                     </div>
                 
-                                    <div class="pagina-interna">
-                                        <div class="contenedor-pagina-interna">
+                                    <div class="pagina-interna position-absolute">
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
                                             <h3 class="titulo-pagina-interna">
-                                                For urban lovers
+                                                Lorem Ipsum
                                             </h3>
                                             <p class="pagina-interna-texto">
-                                               As cities never sleep, there are always something going on, no matter what time!
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
                                             </p>
-                                            <a href="#" class="pagina-interna__btn pagina-interna__btn--city">View deals</a>
                                         </div>
                                     </div>
                                 </div>
@@ -929,53 +768,56 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
+<!-- FOOTER -->
 <footer>
-    <!-- SECCIÓN CONTACTO / HORARIO /COPYRIGHT -->
-    <section id="footer-contacto" class="container py-4 text-white">
-        <div class="row justify-content-evenly align-items-top flex-wrap text-center text-lg-start">
-            <div class="col-12 col-md-3 mb-4">
-                <img src="../assets/img/logo.png" alt="logo" class="logo-footer" />
-                <p>© 2022 | Todos los derechos reservados</p>
+        <!-- SECCIÓN CONTACTO / HORARIO /COPYRIGHT -->
+        <section id="footer-contacto" class="container pt-5 pb-3 text-white">
+            <div class="row justify-content-center align-items-top flex-wrap text-center text-lg-start">
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="../assets/img/logo.png" alt="logo" class="logo-footer" />
+                    <p>© 2022 | Todos los derechos reservados</p>
+                </div>
+    
+                <div class="col-12 col-md-3 mb-4">
+                    <h4>Horarios:</h4>
+                    <p>Lunes a Viernes de 20 a 23hs</p>
+                    <p>Sábado y Domingos de 19 a 00hs</p>
+                </div>
+    
+                <div class="col-12 col-md-3 mb-4">
+                    <h4>Contactanos:</h4>
+                    <p>
+                        <img src="../assets/img/ubicacion.png" alt="ubicación" class="icono" />
+                        Av. Pellegrini 1578
+                    </p>
+                    <p>
+                        <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono" />
+                        +54 9 34124-8576
+                    </p>
+                    <p>
+                        <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono" />
+                        4357050
+                    </p>
+                </div>
+    
+                <div class="col-12 col-md-3 mb-4">
+                    <h4>Seguinos:</h4>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/img/icono-ig.svg" alt="ícono de instagram" class="icono-redes" />
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../assets/img/icono-fb.svg" alt="ícono de facebook" class="icono-redes" />
+                    </a>
+                </div>
+    
+                <div class="derechos-autor">
+                    <p>Restó del mundo | Diseño y desarrollo por Carla Sablic</p>
+                </div>
+                <div class="text-center">
+                    <a href="./sitemap.html" class="text-white text-decoration-none" target="_blank">Mapa de sitio</a>
+                </div>
             </div>
-
-            <div class="col-12 col-md-3 mb-4">
-                <h4>Horarios:</h4>
-                <p>Lunes a Viernes de 20 a 23hs</p>
-                <p>Sábado y Domingos de 19 a 00hs</p>
-            </div>
-
-            <div class="col-12 col-md-3 mb-4">
-                <h4>Contactanos:</h4>
-                <p>
-                    <img src="../assets/img/ubicacion.png" alt="ubicación" class="icono" />
-                    Av. Pellegrini 1578
-                </p>
-                <p>
-                    <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono" />
-                    +54 9 34124-8576
-                </p>
-                <p>
-                    <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono" />
-                    4357050
-                </p>
-            </div>
-
-            <div class="col-12 col-md-3 mb-4">
-                <h4>Seguinos:</h4>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../assets/img/icono-ig.svg" alt="ícono de instagram" class="icono-redes" />
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../assets/img/icono-fb.svg" alt="ícono de facebook" class="icono-redes" />
-                </a>
-            </div>
-
-            <div class="derechos-autor">
-                <p>Restó del mundo | Diseño y desarrollo por Carla Sablic</p>
-            </div>
-        </div>
-    </section>
+        </section>
 </footer>
 <div class="position-fixed button-top d-flex justify-content-evenly align-items-center bg-dark">
     <a class="btn" href="#arriba" role="button">
