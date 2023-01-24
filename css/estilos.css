@@ -278,7 +278,7 @@ footer {
   width: 100%;
   grid-area: banner-menu; }
   #banner-menu .bg-menu {
-    background-image: url("../assets/img/banner-menu.jpeg");
+    background-image: url("../assets/img/banner-menu.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -338,52 +338,53 @@ footer {
 
 /* ALEMANIA */
 .card-alemania {
-  background-image: url("../assets/img/alemania.jpg");
+  background-image: url("../assets/img/alemania.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
 /* FRANCIA */
 .card-francia {
-  background-image: url("../assets/img/francia.jpg");
+  background-image: url("../assets/img/francia.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
 /* JAPÓN */
 .card-japon {
-  background-image: url("../assets/img/japon.jpg");
+  background-image: url("../assets/img/japon.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
 /* MÉXICO */
 .card-mexico {
-  background-image: url("../assets/img/mexico.jpg");
+  background-image: url("../assets/img/mexico.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
 /* ARGENTINA */
 .card-argentina {
-  background-image: url("../assets/img/argentina.jpg");
+  background-image: url("../assets/img/argentina.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
 /* ESPAÑA */
 .card-espania {
-  background-image: url("../assets/img/espania.jpg");
+  background-image: url("../assets/img/espania.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 20%; }
 
 /* ITALIA */
 .card-italia {
-  background-image: url("../assets/img/italia.jpg");
+  background-image: url("../assets/img/italia.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-position-x: 20%; }
 
 /* ESTILOS PARA EL FRENTE DE LA TARJETA */
 /* CONTENEDOR DE LA CARA FRONTAL DE LA TARJETA */
@@ -483,7 +484,7 @@ footer {
   flex-wrap: wrap; }
 
 #banner-servicios .bg-banner-menu {
-  background-image: url("../assets/img/servicios.jpg");
+  background-image: url("../assets/img/servicios.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% center;
@@ -615,7 +616,7 @@ footer {
   letter-spacing: 2px; }
 
 #main-contacto {
-  background-image: url("../assets/img/bg-contacto.png");
+  background-image: url("../assets/img/bg-contacto.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
