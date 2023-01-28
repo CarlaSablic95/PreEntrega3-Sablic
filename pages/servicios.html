@@ -30,18 +30,18 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-evenly  id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-evenly"  id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white active" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link text-uppercase text-white" href="../index.html#nosotros">Nosotros</a>
+                        <a class="nav-link text-uppercase text-white underline" href="../index.html#nosotros">Nosotros</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="./menu-mundial.html">Menú
+                        <a class="nav-link text-uppercase text-white underline" href="./menu-mundial.html">Menú
                             mundial</a>
                     </li>
                 </ul>
@@ -55,16 +55,16 @@
 
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline active" aria-current="page"
                             href="./servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link text-uppercase text-white" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="./eventos.html">Eventos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -82,59 +82,65 @@
             </div>
         </section>
 
-        <div class="linea-divisora" id="linea-divisoria">
-            <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+        <div class="linea-divisora container" id="linea-divisoria">
+            <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid mb-5">
+            <h2 class="py-3">Conocé más sobre nuestros <span class="fst-italic fw-bold">servicios</span></h2>
         </div>
 
         <!-- SECCIÓN SERVICIOS -->
-        <section id="take-away" class="d-flex justify-content-evenly align-items-center mb-5">
-            <div class="servicio d-none d-lg-flex">
-                <img src="../assets/img/take-away-food.png" alt="imagen de hombre con bolsa de comida">
-            </div>
+        <section id="servicios-tarjetas" class="d-flex justify-content-evenly align-items-center my-3">
+            <div class="contenedor-tarjeta">
+                <div class="tarjeta">
+                    <div class="servicio slide-1">
+                            <div class="icono-titulo">
+                                <img src="../assets/img/take-away.png" alt="ícono de bolsa" class="mb-4">
+                                <h4 class="text-white text-uppercase">Take away</h4>
+                            </div>
+                    </div>
 
-            <div class="info-servicios">
-                <div class="d-flex align-items-center">
-                    <img src="../assets/img/take-away.png" alt="ícono de teléfono" class="mb-4 me-4">
-                    <h4 class="text-white">Take away</h4>
-                </div>
-                <div class="">
-                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ad distinctio,
-                        esse nostrum explicabo ratione.</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="delivery" class="d-flex justify-content-evenly align-items-center mb-5">
-            <div class="info-servicios">
-                <div class="d-flex align-items-center">
-                    <img src="../assets/img/delivery-boy.png" alt="ícono de chico del delivery" class="mb-4 me-4">
-                    <h4 class="text-white">Delivery</h4>
-                </div>
-                <div>
-                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ad distinctio,
-                        esse nostrum explicabo ratione.</p>
+                    <div class="informacion slide-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                            <p class="">Podés hacer tu pedido <span class="fst-italic fw-bold">por Whatsapp</span> ó de manera <span class="fst-italic fw-bold">presencial</span>, y retirarlo en nuestro restó.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="servicio d-none d-lg-flex">
-                <img src="../assets/img/delivery-food-man.png" alt="Delivery">
-            </div>
-        </section>
-
-        <section id="reservas" class="d-flex justify-content-evenly align-items-center mb-5">
-            <div class="servicio d-none d-lg-flex">
-                <img src="../assets/img/reservas.png" alt="reservas telefónicas">
-            </div>
-
-            <div class="info-servicios">
-                <div class="d-flex align-items-center">
-                    <img src="../assets/img/icono-telefono.png" alt="ícono de teléfono" class="me-4 mb-4">
-                    <h4 class="text-white">Reservas</h4>
+            <div class="contenedor-tarjeta">
+                <div class="tarjeta">
+                    <div class="servicio slide-1">
+                            <div class="icono-titulo">
+                                <img src="../assets/img/delivery-boy.png" alt="ícono de chico del delivery" class="me-2 mb-4">
+                                <h4 class="text-white text-uppercase">Delivery</h4>
+                            </div>
+                    </div>
+    
+                    <div class="informacion slide-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                            <p class="">Para pedidos llamá al 4357050, de Lunes a Sábado.</p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div>
-                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ad distinctio,
-                        esse nostrum explicabo ratione.</p>
+            </div>
+
+            <div class="contenedor-tarjeta">
+                <div class="tarjeta">
+                    <div class="servicio slide-1">
+                            <div class="icono-titulo">
+                                <img src="../assets/img/icono-telefono.png" alt="ícono de teléfono" class="me-4 mb-4">
+                                <h4 class="text-white text-uppercase">Reservas</h4>
+                            </div>
+                    </div>
+    
+                    <div class="informacion slide-2 ">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                            <p class="">Para reservas llamá al 4357050, y para eventos, completá el formulario en nuestra sección de <a href="../pages/contacto.html" class="fw-bold fst-italic text-dark">Contacto</a>.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -164,7 +170,7 @@
                     </p>
                     <p>
                         <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono" />
-                        +54 9 34124-8576
+                        <a href="https://api.whatsapp.com/send?phone=549341248576" class="text-decoration-none text-white">+54 9 34124-8576</a>
                     </p>
                     <p>
                         <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono" />

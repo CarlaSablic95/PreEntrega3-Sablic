@@ -33,15 +33,15 @@
                 <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase text-white active" aria-current="page"
+                            <a class="nav-link text-uppercase text-white underline" aria-current="page"
                                 href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item mx-5">
-                            <a class="nav-link text-uppercase text-white" href="../index.html#nosotros">Nosotros</a>
+                            <a class="nav-link text-uppercase text-white underline" href="../index.html#nosotros">Nosotros</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase text-white" href="./menu-mundial.html">Menú
+                            <a class="nav-link text-uppercase text-white underline" href="./menu-mundial.html">Menú
                                 mundial</a>
                         </li>
                     </ul>
@@ -55,16 +55,16 @@
 
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase text-white" aria-current="page"
+                            <a class="nav-link text-uppercase text-white underline" aria-current="page"
                                 href="./servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item mx-5">
-                            <a class="nav-link text-uppercase text-white" aria-current="page"
+                            <a class="nav-link text-uppercase text-white underline" aria-current="page"
                                 href="./eventos.html">Eventos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase text-white" aria-current="page"
+                            <a class="nav-link text-uppercase text-white underline active" aria-current="page"
                                 href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -76,41 +76,60 @@
     <!-- MAIN -->
 
     <main id="main-contacto" class="position-relative py-4">
-        <div id="titulo-contacto" class="mt-4 mb-3 text-white text-center text-uppercase">
+        <div id="titulo-contacto" class="mt-3 text-white text-center text-uppercase d-lg-none">
             <h1 class="fw-bold my-3">Contactanos</h1>
         </div>
         <!-- FORMULARIO DE CONTACTO -->
-        <section class="container d-flex flex-row-reverse flex-wrap justify-content-evenly align-items-center" id="mapa-formulario">
-            <div id="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8181646496055!2d-60.65004102395815!3d-32.95580987235209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0df3b35255%3A0x6b4efd43d28764c3!2sAv.%20Pellegrini%201578%2C%20S2000BUP%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1670029865471!5m2!1ses-419!2sar"
-                    width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="container d-flex flex-wrap justify-content-center align-items-center text-center" id="mapa-formulario">
+            <div class="contacto-info d-none d-lg-flex flex-column justify-content-center">
+                <h2 class="text-uppercase">Contactanos</h2>
+                <div>
+                    <img src="../assets/img/linea-divisoria-bco.png" alt="linea divisoria" class="mb-5 img-fluid">
+                </div>
+
+                <p>
+                    <img src="../assets/img/icono-mensaje.png" alt="ícono de mensaje" class="icono" />
+                    <a href="mailto:restodelmundo@gmail.com" class="text-decoration-none text-white">restodelmundo@gmail.com</a>
+                </p>
             </div>
 
-            <div id="formulario" class="my-4">
+            <div id="formulario" class="my-4 text-white">
                 <form action="" method="post">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="inputNombre" name="inputNombre" placeholder="Nombre"
+                        <input type="text" class="form-control" id="inputNombre" name="inputNombre"
                             required>
-                        <label for="inputNombre" class="form-label text-muted mb-0">Nombre</label>
+                        <label for="inputNombre" class="form-label text-white mb-0">Nombre</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="inputTelefono" name="inputTelefono"
-                            placeholder="Teléfono" required>
-                        <label for="inputTelefono" class="form-label text-muted mb-0">Teléfono</label>
+                        <input type="tel" class="form-control" id="inputTelefono" name="inputTelefono"  required>
+                        <label for="inputTelefono" class="form-label text-white mb-0">Teléfono</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email" required>
-                        <label for="floatingInputEmail" class="form-label text-muted mb-0">Email</label>
+                        <input type="email" class="form-control" id="floatingInputEmail" required>
+                        <label for="floatingInputEmail" class="form-label text-white mb-0">Email</label>
+                    </div>
+                    <div class="reservas d-flex flex-column justify-content-center align-items-start">
+                        <p>Reservar para:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="aniversario" value="option1" checked="">
+                            <label class="form-check-label" for="aniversario">Aniversarios</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="graduaciones" value="option2">
+                            <label class="form-check-label" for="graduaciones">Graduaciones</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="cumpleanios" value="option2">
+                            <label class="form-check-label" for="cumpleanios">Cumpleaños</label>
+                        </div>
                     </div>
 
                     <div class="form-floating mb-5">
-                        <textarea class="form-control" placeholder="Dejá tu consulta" id="floatingTextarea2"
-                            style="height: 100px" required></textarea>
-                        <label for="floatingTextarea2" class="form-label text-muted mb-0">Dejá tu consulta</label>
+                        <textarea class="form-control" id="floatingTextarea2"
+                            style="height: 80px" required></textarea>
+                        <label for="floatingTextarea2" class="form-label text-white mb-0">Mensaje:</label>
                     </div>
 
 
@@ -147,7 +166,7 @@
                     </p>
                     <p>
                         <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono" />
-                        +54 9 34124-8576
+                        <a href="https://api.whatsapp.com/send?phone=549341248576" class="text-decoration-none text-white">+54 9 34124-8576</a>
                     </p>
                     <p>
                         <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono" />

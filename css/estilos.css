@@ -239,7 +239,7 @@ footer {
   margin-bottom: 2rem; }
 
 .clientes {
-  margin: 1.5rem auto; }
+  margin: 0.5rem auto; }
   .clientes img {
     border-radius: 50%;
     width: 120px !important; }
@@ -261,7 +261,8 @@ footer {
 #pills-tab .nav-item {
   border: 2px solid #141827; }
   #pills-tab .nav-item .nav-link {
-    color: #141827 !important; }
+    color: #141827 !important;
+    background-color: #ffffff; }
     #pills-tab .nav-item .nav-link.active {
       background-color: #141827;
       color: #ffffff !important;
@@ -271,7 +272,7 @@ footer {
 #menu-mundial {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.1fr 1.5fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr;
   grid-template-areas: "banner-menu" "linea-divisoria" "menu-paises"; }
 
 #banner-menu {
@@ -297,23 +298,23 @@ footer {
   box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
   position: relative;
   transition: all 1s ease;
-  width: 15rem;
-  height: 30rem; }
+  width: 240px;
+  height: 480px; }
 
 .bg-carta-menu {
-  background-image: url("../assets/img/carta-menu.png");
+  background-image: url("../assets/img/carta-menu.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
 .tarjeta-invertida {
-  height: 30rem;
+  height: 480px;
   perspective: 100rem;
   position: absolute;
   right: 0;
   transition: all 1s ease;
   visibility: hidden;
-  width: 15rem;
+  width: 240px;
   z-index: 100; }
 
 .tarjeta-invertida > * {
@@ -390,11 +391,11 @@ footer {
 /* CONTENEDOR DE LA CARA FRONTAL DE LA TARJETA */
 .tarjeta-frente {
   background-color: #fafbfa;
-  height: 30rem;
-  width: 15rem; }
+  height: 480px;
+  width: 240px; }
 
 .tarjeta-frente-top {
-  height: 30rem;
+  height: 480px;
   padding: .75rem; }
 
 .titulo-tarjeta {
@@ -405,7 +406,7 @@ footer {
 .tarjeta-dorso {
   background-color: #fafbfa;
   transform: rotateY(180deg);
-  height: 30rem; }
+  height: 480px; }
 
 .pagina-interna {
   background-color: #ffffff;
@@ -414,8 +415,12 @@ footer {
   padding: 1rem;
   right: 0;
   transition: all 1s ease;
-  width: 15rem;
+  width: 240px;
   z-index: 1; }
+  .pagina-interna .titulo-pagina-interna {
+    font-size: 1.2rem; }
+  .pagina-interna .pagina-interna-texto {
+    font-size: 0.9rem; }
 
 .contenedor-pagina-interna {
   height: 100%;
@@ -437,6 +442,10 @@ footer {
   .card-menu:hover .pagina-interna {
     box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1); } }
 
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .card-pais {
+    --bs-gutter-x: 4.5rem !important; } }
+
 @media screen and (min-width: 992px) {
   h1 {
     font-size: 3.5rem; }
@@ -448,8 +457,8 @@ footer {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.2fr repeat(3, 0.5fr);
-  grid-template-areas: "banner" "linea-divisoria" "take-away" "delivery" "reservas";
+  grid-template-rows: 0.5fr 0.2fr 1fr;
+  grid-template-areas: "banner" "linea-divisoria" "servicios-tarjetas";
   column-gap: 10px;
   row-gap: 10px; }
 
@@ -460,26 +469,11 @@ footer {
 #linea-divisoria {
   grid-area: linea-divisoria; }
 
-/* TAKE AWAY */
-#take-away {
-  grid-area: take-away;
+/* SERVICIOS */
+#servicios-tarjetas {
+  grid-area: servicios-tarjetas;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-/* DELIVERY */
-#delivery {
-  grid-area: delivery;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-#reservas {
-  grid-area: reservas;
-  display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap; }
 
@@ -490,32 +484,86 @@ footer {
   background-position: 60% center;
   height: 100vh; }
 
-.info-servicios {
+.servicio, .contenedor-tarjeta .tarjeta .informacion {
+  width: 150px;
+  height: 250px; }
+
+.contenedor-tarjeta .tarjeta .servicio, .contenedor-tarjeta .tarjeta .informacion {
   background-color: #736681;
-  box-shadow: inset 0rem 0rem 4.55rem 0rem #00000033;
-  width: 400px;
-  height: 35vh;
-  border-radius: 1rem;
-  padding: 2rem; }
+  box-shadow: inset 0rem 0rem 4.55rem 0rem #0d0d0d33;
+  width: 300px;
+  height: 30vh;
+  transition: all 1s ease;
+  border-radius: .5rem;
+  padding: 2rem;
+  z-index: 2; }
+
+.contenedor-tarjeta .tarjeta .informacion {
+  z-index: 0;
+  background-color: #ffffff;
+  border-radius: .5rem; }
+
+.contenedor-tarjeta .tarjeta .servicio.slide-1, .contenedor-tarjeta .tarjeta .slide-1.informacion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: .7s ease 0s all; }
+
+.contenedor-tarjeta .tarjeta:hover .informacion.slide-2 {
+  transition: .8s;
+  transform: translateY(-30px); }
+
+.contenedor-tarjeta .tarjeta .icono-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+  .contenedor-tarjeta .tarjeta .icono-titulo img {
+    width: 70px; }
+
+.contenedor-tarjeta .tarjeta .informacion.slide-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translateY(-218px);
+  box-shadow: 0 20px 40px rgba(172, 172, 172, 0.4); }
 
 @media screen and (min-width: 992px) {
   #main-servicios {
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 0.2fr repeat(3, 0.5fr);
-    grid-template-areas: "banner banner" "linea-divisoria linea-divisoria" "take-away take-away" "delivery delivery" "reservas reservas";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.2fr 0.5fr;
+    grid-template-areas: "banner banner banner" "linea-divisoria linea-divisoria linea-divisoria" "servicios-tarjetas servicios-tarjetas servicios-tarjetas";
     column-gap: 10px;
-    row-gap: 10px; } }
+    row-gap: 10px; }
+  .contenedor-tarjeta .tarjeta .servicio, .contenedor-tarjeta .tarjeta .informacion {
+    width: 350px;
+    height: 25vh; }
+  .contenedor-tarjeta .tarjeta .informacion.slide-2 {
+    transform: translateY(-180px); } }
 
 @media (min-width: 1366px) {
-  .info-servicios {
-    width: 450px; }
-  .servicio {
-    width: 450px;
-    justify-content: center; }
-    .servicio img {
-      width: 100%; } }
+  .contenedor-tarjeta .tarjeta .servicio, .contenedor-tarjeta .tarjeta .informacion {
+    width: 340px; }
+    .contenedor-tarjeta .tarjeta .servicio h4, .contenedor-tarjeta .tarjeta .informacion h4 {
+      font-size: -4rem; } }
+
+@media (min-width: 1500px) {
+  .contenedor-tarjeta .tarjeta .informacion.slide-2 {
+    transform: translateY(-205px); } }
 
 #main-eventos {
   grid-area: main;
@@ -608,15 +656,29 @@ footer {
   text-align: center;
   letter-spacing: 3px; }
 
-.btn-enviar {
-  background-color: #62455B !important;
+.btn-enviar, .btn-enviar:hover {
+  background-color: #141827;
   color: #ffffff !important;
-  background: linear-gradient(-68deg, #564152d6, #b9a4d0c7);
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+.form-control, .form-control:focus {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ffffff; }
+  .form-control::placeholder, .form-control:focus::placeholder {
+    color: #ffffff; }
+
+.form-check-input:checked {
+  background-color: #e9e9e9;
+  border-color: #e9e9e9; }
+  .form-check-input:checked:checked[type=radio] {
+    background-image: url("../assets/img/radio-button.png"); }
+
 #main-contacto {
-  background-image: url("../assets/img/bg-contacto.webp");
+  background-image: url("../assets/img/bg-contacto.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -629,26 +691,25 @@ footer {
 #titulo-contacto {
   grid-area: titulo-contacto; }
 
-.seccion #titulo-contacto {
-  padding: 3rem 0; }
-  .seccion #titulo-contacto #titulo-contacto {
-    grid-area: titulo-contacto; }
-    .seccion #titulo-contacto #titulo-contacto h1 {
-      font-size: 2rem; }
+#titulo-contacto {
+  padding: 3rem 0;
+  grid-area: titulo-contacto; }
+  #titulo-contacto h1 {
+    font-size: 2rem; }
 
 #mapa-formulario {
   grid-area: mapa-formulario; }
-  #mapa-formulario #mapa {
-    display: flex;
-    order: 2;
-    padding: 0 .5rem; }
-  #mapa-formulario iframe {
-    width: 100%; }
   #mapa-formulario #formulario {
-    background-color: #736681b5;
+    background-color: rgba(67, 62, 62, 0.71);
     backdrop-filter: blur(4px);
-    padding: 2.5rem 2rem;
-    border-radius: 1rem; }
+    padding: 2.5rem 2rem; }
+
+.contacto-info {
+  background-color: #141827e8;
+  color: #ffffff;
+  width: 400px;
+  height: 630px;
+  padding: 3rem; }
 
 @media screen and (min-width: 320px) {
   #titulo-contacto h1 {
@@ -656,25 +717,26 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   #formulario {
-    width: 80%; }
-  #mapa {
-    width: 85%; } }
+    width: 80%; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #formulario {
+    width: 80%; } }
 
 @media screen and (min-width: 992px) {
   #formulario {
-    width: 40%; }
-  #mapa {
-    width: 40%; }
+    width: 400px;
+    height: 630px; }
   #titulo-contacto h1 {
     font-size: 2.5rem; }
+  #titulo-contacto .contacto-info h2 {
+    font-size: 2rem; }
   #main-contacto {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "titulo-contacto titulo-contacto" "mapa-formulario mapa-formulario"; } }
 
 @media screen and (min-width: 1336px) {
   #formulario {
-    width: 30%; }
-  #mapa {
     width: 30%; } }
 
 html {
@@ -690,6 +752,9 @@ html {
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas: "header" "main" "footer"; }
 
+ul li {
+  list-style-type: none; }
+
 *::-webkit-scrollbar {
   width: 14px; }
 
@@ -698,8 +763,39 @@ html {
   border-radius: 8px;
   border: 3px solid #ffffff; }
 
+.underline {
+  position: relative; }
+  .underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    transition: 0.8s cubic-bezier(0.2, 1, 0.5, 1); }
+
+.underline:hover::before {
+  left: 0;
+  right: 0;
+  width: 50%; }
+
+.navbar-nav .nav-item .nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 35%;
+  height: 1px;
+  background-color: #ffffff;
+  transition: 0.8s cubic-bezier(0.2, 1, 0.5, 1); }
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none; }
+
 .button-top {
-  background-color: #141827;
+  background-color: #141827 !important;
   right: 25px;
   bottom: 30px;
   z-index: 1000;
@@ -775,7 +871,6 @@ h2 {
   right: 0;
   bottom: 0;
   left: 0;
-  /* height: calc(100vh - 70px); */
   max-height: 100vh; }
 
 .titulo-banner-video {
@@ -788,6 +883,15 @@ h2 {
   body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "header header" "main main" "footer footer"; }
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%; }
   h1 {
     font-size: 3rem;
-    text-align: center; } }
+    text-align: center; }
+  .button-top {
+    width: 70px;
+    height: 70px; }
+  .navbar-nav .nav-item .nav-link.active::before {
+    width: 100%; } }

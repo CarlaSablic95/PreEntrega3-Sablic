@@ -8,15 +8,40 @@
 }
 // BOTÓN FORMULARIO
 .btn-enviar {
-    background-color: $violet-dark !important;
+    background-color: $black;
     color: $white !important;
-    background: linear-gradient(-68deg, #564152d6, #b9a4d0c7);
     text-transform: $mayuscula;
-    letter-spacing:2px;
+    letter-spacing: 2px;
+    &:hover {
+        @extend .btn-enviar;   
+    }
+}
+
+// ESTILOS (FORMULARIO)
+.form-control {
+    color: $white;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $white;
+    &::placeholder {
+        color: $white;
+    }
+    &:focus {
+        @extend .form-control;
+    }
+}
+
+.form-check-input:checked {
+    background-color: #e9e9e9;
+    border-color: #e9e9e9;
+    &:checked[type=radio] {
+        background-image: url('../assets/img/radio-button.png');
+    }
 }
 
 #main-contacto {
-    background-image: url('../assets/img/bg-contacto.webp');
+    background-image: url('../assets/img/bg-contacto.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,32 +58,29 @@
     grid-area: titulo-contacto;
 }
 
-.seccion #titulo-contacto {
+#titulo-contacto {
     padding: 3rem 0;
-        #titulo-contacto {
-        grid-area: titulo-contacto;
+    grid-area: titulo-contacto;
         h1 {
             font-size: 2rem;
         }
-    }
 }
 
 #mapa-formulario {
     grid-area: mapa-formulario;
-    #mapa {
-        display: flex;
-        order: 2;
-        padding: 0 .5rem;
-    }
-    iframe {
-        width: 100%;
-    }
     #formulario {
-        background-color: #736681b5;
+        background-color: rgba(67, 62, 62, .71);
         backdrop-filter: blur(4px);
         padding: 2.5rem 2rem;
-        border-radius: 1rem;
     }
+}
+
+.contacto-info {
+    background-color: #141827e8;
+    color: $white;
+    width: 400px;
+    height: 630px;
+    padding: 3rem;
 }
 
 // MEDIA QUERIES
@@ -75,24 +97,29 @@
     #formulario {
         width: 80%;
     }
+}
 
-    #mapa {
-        width: 85%;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #formulario {
+        width: 80%;
     }
 }
 
 @media screen and (min-width: 992px) {
     #formulario {
-        width: 40%;
-    }
-
-    #mapa {
-        width: 40%;
+        width: 400px;
+        height: 630px;
     }
 
     #titulo-contacto {
         h1 {
             font-size: 2.5rem;
+        }
+
+        .contacto-info {
+            h2 {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -106,10 +133,6 @@
 
 @media screen and (min-width: 1336px) {
     #formulario {
-        width: 30%;
-    }
-
-    #mapa {
         width: 30%;
     }
 }

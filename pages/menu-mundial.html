@@ -33,15 +33,15 @@
             <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white active" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link text-uppercase text-white" href="../index.html#nosotros">Nosotros</a>
+                        <a class="nav-link text-uppercase text-white underline" href="../index.html#nosotros">Nosotros</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="./menu-mundial.html">Menú
+                        <a class="nav-link text-uppercase text-white underline active" href="./menu-mundial.html">Menú
                             mundial</a>
                     </li>
                 </ul>
@@ -55,16 +55,16 @@
 
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="./servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link text-uppercase text-white" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="./eventos.html">Eventos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" aria-current="page"
+                        <a class="nav-link text-uppercase text-white underline" aria-current="page"
                             href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -85,13 +85,13 @@
             <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
         </div>
 
-        <section id="menu-paises" class="container-fluid py-4">
+        <section id="menu-paises" class="container-fluid py-4 mb-md-5">
             <div class="container text-center">
-                <h2>Conocé nuestro <span class="fst-italic fw-bold">menú</span></h2>
+                <h2>Conocé nuestro <span class="fst-italic fw-bold">menú internacional</span></h2>
             </div>
-        
+
             <!-- BOTONES DÍAS PARA EL MENÚ -->
-            <ul class="nav nav-pills my-5 justify-content-evenly" id="pills-tab" role="tablist">
+            <ul class="container nav nav-pills my-5 justify-content-evenly" id="pills-tab" role="tablist">
                 <li class="nav-item mb-3" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#alemania"
                         type="button" role="tab" aria-controls="pills-home" aria-selected="true">Lunes</button>
@@ -129,11 +129,11 @@
                 <div class="tab-pane fade show active" id="alemania" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
                     <!-- ALEMANIA -->
-                    <div class="container position-relative">
+                    <div class="container-fluid position-relative">
                         <h2 class="text-center mb-5">Alemania</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -147,23 +147,26 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h4 class="titulo-pagina-interna text-uppercase bold">
-                                               Entradas: 
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">
+                                               Entrada
                                             </h4>
+                                            <div class="linea-divisora mb-3">
+                                                <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                            </div>
 
                                             <h5 class="titulo-pagina-interna">
-                                                Kartoffelsalat
+                                                Wiener Schnitzel
                                             </h5>
                                             <p class="pagina-interna-texto">
-                                                Tortilla de papas ........ $10.000
+                                                Milanesa de ternera acompañada de huevo frito, verduras y papas asadas .... <span class="fw-bold">$3.000</span>
                                             </p>
-                                            
+
                                             <h5 class="titulo-pagina-interna">
                                                 Frikadellen
                                             </h5>
                                             <p class="pagina-interna-texto">
-                                                Hamburguesas especiadas ........ $10.000
+                                                Albóndigas de carne con salsa blanca .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -171,7 +174,7 @@
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -185,12 +188,26 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">
+                                               Plato principal
+                                            </h4>
+                                            <div class="linea-divisora mb-3">
+                                                <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                            </div>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Kartoffelsalat
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero.
+                                                Ensalada de papas, panceta, cebolla; especiada con sal, pimienta negra y perejil .... <span class="fw-bold">$3.000</span>
+                                            </p>
+                                            
+                                            <h5 class="titulo-pagina-interna">
+                                                Rheinischer sauerbraten
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Asado de carne marinado con caldo de verduras y especias .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -198,7 +215,7 @@
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -212,12 +229,25 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">
+                                               Postre
+                                            </h4>
+                                            <div class="linea-divisora mb-3">
+                                                <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                            </div>
+                                            
+                                            <h5 class="titulo-pagina-interna">
+                                                Apfelstrudel
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Strudel de manzana y frutos secos .... <span class="fw-bold">$3.000</span>
+                                            </p>
+                                            <h5 class="titulo-pagina-interna">
+                                                Schwarzwälder Kirschtorte (Torta Selva Negra)
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Bizcochuelo de chocolate, relleno de crema y cerezas .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -232,9 +262,9 @@
                     tabindex="0">
                     <div class="container position-relative">
                         <h2 class="text-center mb-5">Francia</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -248,20 +278,40 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
-                                            <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
-                                            </p>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                                <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Entrada</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                
+                                                <h5 class="titulo-pagina-interna">
+                                                    Ratatouille
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Guisado de hortalizas y verduras .... <span class="fw-bold">$3.000</span>
+                                                </p>
+
+                                                <h5 class="titulo-pagina-interna">
+                                                    Confit de canard sauce à l'orange
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Pato confitado con salsa de naranja .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                                <h5 class="titulo-pagina-interna">
+                                                    Quiché lorraine
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Tarta rellena de crema, huevos y jamón .... <span class="fw-bold">$3.000</span>
+                                                </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -275,12 +325,31 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Plato principal</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Cassoulet
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Guiso de porotos blancos con carne .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Soupe à l'oignon
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Sopa de cebolla caramelizada.... <span class="fw-bold">$3.000</span>
+                                            </p>
+                                            
+                                            <h5 class="titulo-pagina-interna">
+                                                Tartiflette
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Gratinado de queso reblochon, papas, cebollas, bacon, crème fraîche, pimienta y vino blanco .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -288,7 +357,7 @@
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -302,12 +371,31 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Postre</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Crème brûlée
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Crema a base de leche, huevos, azúcar y vainilla .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Pain au chocolat
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Relleno de chocolate envuelto en una masa de hojaldre .... <span class="fw-bold">$3.000</span>
+                                            </p>
+                                            
+                                            <h5 class="titulo-pagina-interna">
+                                                Macarons
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Galleta con relleno de buttercream, mermelada o ganache .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -321,9 +409,9 @@
                 <div class="tab-pane fade" id="japon" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
                     <div class="container position-relative">
                         <h2 class="text-center mb-5">Japón</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -337,12 +425,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Entrada</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Onigiri
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Triángulos de arroz relleno de pescado cubiertos con un trozo de alga nori  .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Ramen
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Sopa de fideos servidos en un caldo junto con cerdo cocido en rodajas, cebollas y huevo cocido .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -350,7 +450,7 @@
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -364,12 +464,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Plato principal</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Maki de salmón
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Rollo de arroz envuelto en alga nori con salmón  .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Tempura de mariscos y verduras
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                 Fritos de mariscos, berenjena, calabaza, brócoli, coliflor, zanahorias y hongos .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -377,7 +489,7 @@
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -391,12 +503,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Postre</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Dorayaki
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Panqueque relleno de anko (pasta dulce de porotos rojos)  .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Mitarashi dango
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Brochette de bolitas de arroz cubiertas con un glaseado de salsa dulce a base de soja .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -410,9 +534,9 @@
                 <div class="tab-pane fade" id="mexico" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                     <div class="container position-relative">
                         <h2 class="text-center mb-5">México</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -426,12 +550,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Entrada</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Tacos de carne y verdura
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Tortilla a base de maíz con relleno de carne de ternera, cebolla, morrón verde, ajo, tomate y cilantro .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Aguachiles
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Langostino crudo marinado en salsa de agua, lima, cilantro, chile, sal y pimienta; mezclado con cebolla morada y pepino .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -439,7 +575,7 @@
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -453,12 +589,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Plato principal</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Ceviche
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Pescado fresco, marinado en jugo de limón, mezclado con cebolla morada, morrón verde, tomate, y palta  .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Huevos Rancheros
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Huevos fritos servidos en tortillas de maíz tostadas, con salsa de tomate, acompañados de rodajas de pimiento, cebolla y palta .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -466,7 +614,7 @@
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -480,12 +628,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Postre</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Jericalla
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Postre elaborado con leche, huevos, vainilla, canela y azúcar  .... <span class="fw-bold">$3.000</span>
+                                            </p>
+
+                                            <h5 class="titulo-pagina-interna">
+                                                Plátanos flameados con tequila
+                                            </h5>
+                                            <p class="pagina-interna-texto">
+                                                Bananas fritas en azúcar y manteca flameadas con tequila, acompañadas de helado de vainilla .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -499,9 +659,9 @@
                 <div class="tab-pane fade" id="argentina" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                     <div class="container position-relative">
                         <h2 class="text-center mb-5">Argentina</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -515,12 +675,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Entrada</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Picada argentina
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                     Jamón cocido, salame, panceta, mozarella, quesos semi duro, chorizos de campo, aceituna y pan focaccia .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Zapallitos rellenos
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Zapallitos rellenos de carne, cebolla, morrón verde y tomate; gratinados con queso .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -528,7 +700,7 @@
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -542,12 +714,24 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Plato principal</h4>   
+                                                
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Asado a la parrilla
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Tira de asado, ojo de bife, vacío, chorizo y morcilla. Papas, batatas y cebollas .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Pollo al disco
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Guisado de pollo con verduras, marinados en vino blanco .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -555,7 +739,7 @@
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -569,12 +753,23 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Postre</h4>   
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Bizcochuelo de yogurt relleno con helado
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Bizcochuelo a base de yogurt natural relleno de helado y dulce de leche, cubierto con chocolate .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Budín de pan mixto
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero accusan.
+                                                Budín a base de pan, leche, azúcar, huevos y esencia de vainilla. Acompañado de dulce de leche y crema .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -588,9 +783,9 @@
                 <div class="tab-pane fade" id="espania" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                     <div class="container position-relative">
                         <h2 class="text-center mb-5">España</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -604,12 +799,23 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Entrada</h4>   
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Paella de marisco
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Arroz amarillo, calamar, mejillones, langostinos, cebollas, morrón rojo y verde .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Tortilla de papas, cebolla y chorizo colorado
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Papas, cebollas, chorizo colorado, morrón rojo, perejil y pimienta negra .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -617,7 +823,7 @@
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -631,12 +837,23 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Plato principal</h4>   
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Merluza en salsa verde
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Merluza en salsa compuesta de caldo de pescado, ajo, perejil, almejas, aceite de oliva y sal .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Croquetas con salsa bechamel
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Fritos de jamón serrano y gamba, acompañados con salsa bechamel .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -644,7 +861,7 @@
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -658,12 +875,23 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Postre</h4>   
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Piononos de Santa Fé
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Bizcochuelos enrollados, empapados con almíbar, espolvoreados con canela y rellenos de yema pastelera .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Ensaimada mallorquina
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Rosca rellena de crema pastelera y recubierta de azúcar glass  .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -677,9 +905,9 @@
                 <div class="tab-pane fade" id="italia" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                     <div class="container position-relative">
                         <h2 class="text-center mb-5">Italia</h2>
-                        <div class="row">
+                        <div class="row justify-content-evenly">
                             <!-- ENTRADA -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -693,12 +921,23 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Entrada</h4>   
+                                                <div class="linea-divisora mb-3">
+                                                    <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                                </div>
+                                                <h5 class="titulo-pagina-interna">
+                                                    Sfincione italiana
+                                                </h5>
+                                                <p class="pagina-interna-texto">
+                                                    Pizza siciliana con queso caciocavallo, aceitunas negras, anchoas y salsa de tomate especiada con orégano, sal y pimienta .... <span class="fw-bold">$3.000</span>
+                                                </p>
+                                                
+                                            <h5 class="titulo-pagina-interna">
+                                                Bruschette alla caprese
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Rebanada de pan tostada con albahaca fresca, tomate cherry, mozzarella y aceite de oliva .... <span class="fw-bold">$3.000</span>
                                             </p>
                                         </div>
                                     </div>
@@ -706,7 +945,7 @@
                             </div>
 
                             <!-- PLATO PRINCIPAL -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -720,20 +959,31 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Plato principal</h4>   
+                                            <div class="linea-divisora mb-3">
+                                                <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                            </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Risotto alla milanese
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Arroz tostado con un sofrito de cebolla y aceite con caldo; condimentado con queso parmesano rallado y azafrán .... <span class="fw-bold">$3.000</span>
                                             </p>
+                                            
+                                        <h5 class="titulo-pagina-interna">
+                                            Lasagne alla bolognese
+                                        </h5>
+                                        <p class="pagina-interna-texto">
+                                            Lasaña de carne con salsa boloñesa, con cubierta de queso gratinado  .... <span class="fw-bold">$3.000</span>
+                                        </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- POSTRE -->
-                            <div class="col-12 col-md-4 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
+                            <div class="col-12 col-lg-3 d-flex justify-content-evenly mb-5 mb-md-3 mb-lg-0">
                                 <div class="card-menu">
                                     <div class="tarjeta-invertida">
                                         <div class="contenedor-tarjeta-invertida position-absolute">
@@ -747,13 +997,25 @@
                                     </div>
                 
                                     <div class="pagina-interna position-absolute">
-                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-center align-items-center text-center">
-                                            <h3 class="titulo-pagina-interna">
-                                                Lorem Ipsum
-                                            </h3>
+                                        <div class="contenedor-pagina-interna d-flex flex-column justify-content-flex-start align-items-center text-center">
+                                            <h4 class="titulo-pagina-interna text-uppercase bold mt-4">Postre</h4>   
+                                            <div class="linea-divisora mb-3">
+                                                <img src="../assets/img/linea-divisoria.png" alt="linea divisoria" class="img-fluid">
+                                            </div>
+                                            <h5 class="titulo-pagina-interna">
+                                                Cannoli siciliano
+                                            </h5>
                                             <p class="pagina-interna-texto">
-                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed aspernatur similique nemo quasi accusamus dicta libero ac.
+                                                Masa enrollada rellena con queso ricota y chips de cholocate .... <span class="fw-bold">$3.000</span>
                                             </p>
+                                            
+                                        <h5 class="titulo-pagina-interna">
+                                            Tiramisù
+                                        </h5>
+                                        <p class="pagina-interna-texto">
+                                            Bizcochuelo en capas embebido en café con licor y alternados con queso, azúcar y crema de leche; espolvoreado con cacao en polvo, café y azúcar glas .... <span class="fw-bold">$3.000</span>
+                                        </p>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -773,18 +1035,18 @@
         <!-- SECCIÓN CONTACTO / HORARIO /COPYRIGHT -->
         <section id="footer-contacto" class="container pt-5 pb-3 text-white">
             <div class="row justify-content-center align-items-top flex-wrap text-center text-lg-start">
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-lg-3 mb-4">
                     <img src="../assets/img/logo.png" alt="logo" class="logo-footer" />
-                    <p>© 2022 | Todos los derechos reservados</p>
+                    <p>© 2023 | Todos los derechos reservados</p>
                 </div>
     
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-lg-3 mb-4">
                     <h4>Horarios:</h4>
                     <p>Lunes a Viernes de 20 a 23hs</p>
                     <p>Sábado y Domingos de 19 a 00hs</p>
                 </div>
     
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-lg-3 mb-4">
                     <h4>Contactanos:</h4>
                     <p>
                         <img src="../assets/img/ubicacion.png" alt="ubicación" class="icono" />
@@ -792,20 +1054,21 @@
                     </p>
                     <p>
                         <img src="../assets/img/icono-whatsapp.svg" alt="ícono de whatsapp" class="icono" />
-                        +54 9 34124-8576
+                        <a href="https://api.whatsapp.com/send?phone=549341248576" class="text-decoration-none text-white">+54 9 34124-8576</a>
                     </p>
+
                     <p>
                         <img src="../assets/img/telefono.png" alt="ícono de teléfono" class="icono" />
                         4357050
                     </p>
                 </div>
     
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-lg-3 mb-4">
                     <h4>Seguinos:</h4>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none">
                         <img src="../assets/img/icono-ig.svg" alt="ícono de instagram" class="icono-redes" />
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
                         <img src="../assets/img/icono-fb.svg" alt="ícono de facebook" class="icono-redes" />
                     </a>
                 </div>
