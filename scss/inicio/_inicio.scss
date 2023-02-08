@@ -165,10 +165,20 @@
 
 #nosotros {
         #historia-resto {
-            padding: 2rem;
+            padding: 2.5rem;
             font-size: 1rem;
-            width: 80%;
+            width: 65%;
         }
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+    #nosotros {
+        #historia-resto {
+            padding: 1.8rem;
+            font-size: 1rem;
+            width: 70%;
+        }
+}
 }

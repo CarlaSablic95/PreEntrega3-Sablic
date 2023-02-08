@@ -85,9 +85,6 @@
 
 header {
   width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 2;
   grid-area: header; }
   header .bg-dark {
     background-color: #141827 !important; }
@@ -254,9 +251,15 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "video video video" "divisor divisor divisor" "nosotros nosotros nosotros" "servicios servicios servicios" "divisor2 divisor2 divisor2" "carrusel carrusel carrusel"; }
   #nosotros #historia-resto {
-    padding: 2rem;
+    padding: 2.5rem;
     font-size: 1rem;
-    width: 80%; } }
+    width: 65%; } }
+
+@media screen and (min-width: 1024px) {
+  #nosotros #historia-resto {
+    padding: 1.8rem;
+    font-size: 1rem;
+    width: 70%; } }
 
 #pills-tab .nav-item {
   border: 2px solid #141827; }
@@ -613,7 +616,7 @@ footer {
   flex-wrap: wrap; }
 
 .eventos {
-  background-color: #736681cf;
+  background-color: #C1D9D0 !important;
   box-shadow: inset 0rem 0rem 4.55rem 0rem #00000055;
   padding: 2rem;
   border-radius: 1rem;
